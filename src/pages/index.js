@@ -12,12 +12,12 @@ const IndexPage = () => (
     </div>
     <main>
       <div className='row'>
-        <div className='main-image'>
+        <div className='main-image col-9'>
           <Link to="/">
             <img src={reflections} alt='reflections' />
           </Link>
         </div>
-        <div className='main-text'>
+        <div className='main-text col-3'>
           <h2>Localisation - The very basics</h2>
         </div>
       </div>
