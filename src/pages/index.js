@@ -2,15 +2,19 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import McLarenFalls from '../images/McLarenFalls.jpg'
+import reflections from '../images/reflections.jpg'
 
 const IndexPage = () => (
   <Layout>
-    <img src='src/images/McLarenFalls.jpg' alt='McLaren Falls in winter' />
+    <div className='banner'>
+      <img src={McLarenFalls} alt='McLaren Falls in winter' />
+    </div>
     <main>
       <div className='row'>
         <div className='main-image'>
           <Link to="/">
-            <img src='src/images/reflections.jpg' alt='reflections' />
+            <img src={reflections} alt='reflections' />
           </Link>
         </div>
         <div className='main-text'>
