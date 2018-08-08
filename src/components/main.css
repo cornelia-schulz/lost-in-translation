@@ -10,6 +10,16 @@ header {
   padding-top: 0.5rem;
 }
 
+h2 {
+  letter-spacing: 0.05rem;
+  line-height: 1.8rem;
+  font-weight: 100;
+}
+
+p {
+  line-height: 1.4rem;
+}
+
 .button {
   height: 38px;
   padding: 0 30px;
@@ -38,6 +48,7 @@ header {
 }
 
 .main-text {
+  padding-top: 5px;
   padding-left: 4%;
 }
 
@@ -59,6 +70,14 @@ header {
   padding: 0.5em;
   outline: none;
   text-align: center;
+}
+
+footer {
+  border-top: 1px solid #eee;
+  font-size: 0.8rem;
+  text-align: center;
+  height: 55px;
+  padding-top: 20px;
 }
 
 @media (min-width: 992px) {

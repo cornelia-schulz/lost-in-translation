@@ -18,8 +18,11 @@ const IndexPage = () => (
           </Link>
         </div>
         <div className='main-text col-4'>
-          <h2>Localisation - The very basics</h2>
-          <p>blurb</p>
+          <h2>Localisation - <br/>The very basics</h2>
+          <p>Have you ever wondered what the difference is between
+            localisation and internationalisation and what these 
+            terms mean?
+          </p>
           <input className='button' type='button' value='Read more' name='blogBtn' />
         </div>
       </div>
