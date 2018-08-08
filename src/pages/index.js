@@ -12,13 +12,15 @@ const IndexPage = () => (
     </div>
     <main>
       <div className='row'>
-        <div className='main-image col-9'>
+        <div className='main-image col-8'>
           <Link to="/">
             <img src={reflections} alt='reflections' />
           </Link>
         </div>
-        <div className='main-text col-3'>
+        <div className='main-text col-4'>
           <h2>Localisation - The very basics</h2>
+          <p>blurb</p>
+          <input className='button' type='button' value='Read more' name='blogBtn' />
         </div>
       </div>
     </main>
