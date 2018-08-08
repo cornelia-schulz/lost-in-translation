@@ -18,9 +18,11 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     {
-      resolve: 'gatsby-plugin-typography',
+      resolve: 'gatsby-plugin-google-fonts',
       options: {
-        pathToConfigModule: 'src/utils/typography.js'
+        fonts: [
+          'Roboto'
+        ]
       },
       },
   ],

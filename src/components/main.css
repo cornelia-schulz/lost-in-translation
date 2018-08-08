@@ -1,5 +1,8 @@
-* {
-  font-family: Roboto;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*, html, h1 {
+  font-family: Roboto, sans-serif !important;
+  font-weight: 300;
 }
 
 header {

@@ -6,6 +6,7 @@
   "dependencies": {
     "gatsby": "next",
     "gatsby-cli": "^1.1.58",
+    "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-manifest": "next",
     "gatsby-plugin-offline": "next",
     "gatsby-plugin-react-helmet": "next",
@@ -13,8 +14,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
-    "react-typography": "^0.16.13",
-    "typography": "^0.16.17"
+    "react-typography": "^0.16.13"
   },
   "keywords": [
     "gatsby"
