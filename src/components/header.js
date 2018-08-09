@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Header = ({ siteTitle }) => (
   <div className='header'
@@ -21,7 +22,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: 'none',
           }}
         >
-          {siteTitle}
+        <FontAwesomeIcon icon='bars' /> {siteTitle}
         </Link>
       </h1>
     </header>

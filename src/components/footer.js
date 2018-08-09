@@ -1,8 +1,9 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Footer = () => (
   <footer>
-    Copyright Cornelia Schulz 2018
+    <FontAwesomeIcon icon='copyright'/> Cornelia Schulz 2018
   </footer>
 )
 

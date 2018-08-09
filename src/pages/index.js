@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import McLarenFalls from '../images/McLarenFalls.jpg'
 import reflections from '../images/reflections.jpg'
 
+
 const IndexPage = () => (
   <Layout>
     <div className='banner'>
