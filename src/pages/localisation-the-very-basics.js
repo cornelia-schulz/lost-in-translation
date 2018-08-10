@@ -5,8 +5,11 @@ import reflections from '../images/reflections.jpg'
 const blog1 = () => {
   return (
     <Layout>
-      <img className='blog-banner' src={reflections} alt='Reflections' />
-      <article>
+      <div style={{backgroundImage: url(`${reflections}`), width: '100%'}}>
+        test
+      </div>
+      {/* <img className='blog-banner' src={reflections} alt='Reflections' /> */}
+      <article className='container row'>
         <h3>Localisation - The very basics</h3>
         <p>
           I have worked in software localisation for a good few years now and often I find myself
