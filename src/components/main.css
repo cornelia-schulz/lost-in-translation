@@ -21,6 +21,10 @@ p {
   line-height: 1.4rem;
 }
 
+a, a:visited {
+  color: #3498DB;
+}
+
 .button {
   height: 38px;
   padding: 0 30px;
