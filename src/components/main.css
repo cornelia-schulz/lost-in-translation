@@ -91,10 +91,14 @@ main {
 .blog-post-container {
   width: 94%;
   margin: 0 auto;
-  text-align: justify;
 }
 
-main img {
+.blog-post-container p {
+  font-size: 1.5em;
+  line-height: 1.6em;
+}
+
+main img, .blog-post-container img {
   border-radius: 8px;
   filter: drop-shadow(5px 5px 7px );
 }
@@ -164,6 +168,13 @@ main img {
     max-width: 960px;
     margin: 0 auto;
   }
+
+  .blog-post-container p {
+    font-size: 1em;
+    line-height: 1.5em;
+    font-family: Roboto, sans-serif !important;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
