@@ -1,19 +1,19 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import {graphql} from 'gatsby'
 
 // import '../css/blog-post.css'
 
 export default function Template({
-    data
+    data // this prop will be injected by the GraphQL query below
 }) {
-    const {markdownRemark: post} = data
+    const {markdownRemark} = data // this is the post
+    const {frontmatter, html} = markdownRemark
     return (
         <div className='blog-post-container'>
-            <Helmet title={`Lost in Translation - ${post.frontmatter.title}`} />
             <div className='blog-post'>
-                <h1>{post.frontmatter.title}</h1>
-                <div className='blog-post-content' dangerouslySetInnerHTML={{__html:post.__html}} />
+                <h1>{frontmatter.title}</h1>
+                <h2>{frontmatter.date}</h2>
+                <div className='blog-post-content' dangerouslySetInnerHTML={{__html: html}} />
             </div>
         </div>
     )

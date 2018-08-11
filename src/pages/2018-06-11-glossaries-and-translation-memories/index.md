@@ -1,7 +1,7 @@
 ---
 path: "/glossaries-and-translation-memories"
 title: "Glossaries and translation memories"
-date: "2018-06-11T12:12:33.962Z"
+date: "2018-06-11"
 ---
 
 Glossaries
