@@ -2,6 +2,8 @@
 path: "/machine-translations"
 title: "Machine translations"
 date: "2018-08-08"
+tags: ["machine translation", "RBTM", "SMT", "rule based", "statistical machine translation"]
+published: true
 ---
 
 Almost everyone probably has heard of services such as Google Translate. Machine translation is the technical term for any computerised translation service. On a very basic level machine translation works by a simple substitution of words in one language for words in another. It is not quite an alternative to human translation yet as the following lines will show.

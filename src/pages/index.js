@@ -1,9 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import {Link} from 'gatsby'
 
 import Layout from '../components/layout'
 import McLarenFalls from '../images/McLarenFalls.jpg'
 import reflections from '../images/reflections.jpg'
+import cornwallis from '../images/cornwallis.jpg'
+import tui from '../images/tui.jpg'
 
 
 const IndexPage = () => (
@@ -12,10 +14,47 @@ const IndexPage = () => (
       <img src={McLarenFalls} alt='McLaren Falls in winter' />
     </div>
     <main>
+    <div className='row'>
+        <div className='main-image col-8'>
+          <Link to="/machine-translations">
+            <img src={cornwallis} alt='Cornwallis Wharf' />
+          </Link>
+        </div>
+        <div className='main-text col-4'>
+          <h2>Machine translations</h2>
+          <p>
+            Almost everyone probably has heard of services such as 
+            Google Translate. Machine translation is the technical 
+            term for any computerised translation service.
+          </p>
+          <Link to="/machine-translations">
+            <input className='button' type='button' value='Read more' name='blogBtn' />
+          </Link>
+        </div>
+      </div>
+    <div className='row'>
+        <div className='main-image col-8'>
+          <Link to="/glossaries-and-translation-memories">
+            <img src={reflections} alt='Reflections in Auckland' />
+          </Link>
+        </div>
+        <div className='main-text col-4'>
+          <h2>Glossaries and Translation memories</h2>
+          <p>
+          Translation glossaries ensure consistency 
+          and clarity in all translated materials by 
+          helping eliminate uncertainty. Are you using 
+          a glossary yet?
+          </p>
+          <Link to="/glossaries-and-translation-memories">
+            <input className='button' type='button' value='Read more' name='blogBtn' />
+            </Link>
+        </div>
+      </div>
       <div className='row'>
         <div className='main-image col-8'>
-          <Link to="/">
-            <img src={reflections} alt='reflections' />
+          <Link to="/localisation-the-very-basics">
+            <img src={tui} alt='Tui' />
           </Link>
         </div>
         <div className='main-text col-4'>
@@ -24,11 +63,12 @@ const IndexPage = () => (
             localisation and internationalisation is and what these 
             terms mean?
           </p>
-          <input className='button' type='button' value='Read more' name='blogBtn' />
+          <Link to="/localisation-the-very-basics">
+            <input className='button' type='button' value='Read more' name='blogBtn' />
+          </Link>
         </div>
       </div>
     </main>
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
   </Layout>
 )
 

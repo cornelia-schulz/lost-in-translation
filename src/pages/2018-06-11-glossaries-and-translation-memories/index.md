@@ -2,6 +2,8 @@
 path: "/glossaries-and-translation-memories"
 title: "Glossaries and translation memories"
 date: "2018-06-11"
+tags: ["glossary", "translation memory", "TM", "terms"]
+published: true
 ---
 
 Glossaries
