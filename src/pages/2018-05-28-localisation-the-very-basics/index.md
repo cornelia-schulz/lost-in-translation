@@ -6,6 +6,8 @@ tags: ["localisation", "localization", "internationalisation", "internationaliza
 published: true
 ---
 
+![City reflections](https://farm5.staticflickr.com/4305/35360154024_ac42fd86eb_b.jpg)
+
 I have worked in software localisation for a good few years now and often I find myself googling and collecting information and how to’s on various topics related to localisation and I thought, rather than keeping it all hidden in my little notebook, I will summarise things I research and collate them in this blog.
 
 Localisation is often abbreviated to L10N, which simply takes the first and the last letter of the word itself, plus the count of letters of the word in between these letters.

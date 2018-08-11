@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import McLarenFalls from '../images/McLarenFalls.jpg'
 import reflections from '../images/reflections.jpg'
 import cornwallis from '../images/cornwallis.jpg'
-import tui from '../images/tui.jpg'
+import city from '../images/city.jpg'
 
 
 const IndexPage = () => (
@@ -54,7 +54,7 @@ const IndexPage = () => (
       <div className='row'>
         <div className='main-image col-8'>
           <Link to="/localisation-the-very-basics">
-            <img src={tui} alt='Tui' />
+            <img src={city} alt='City reflections' />
           </Link>
         </div>
         <div className='main-text col-4'>
