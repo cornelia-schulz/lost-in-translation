@@ -4,6 +4,8 @@ title: "Localisation - The very basics"
 date: "2018-05-21"
 tags: ["localisation", "localization", "internationalisation", "internationalization", "translation", "globalisation", "globalization", "terms"]
 published: true
+next: "/glossaries-and-translation-memories"
+previous: "/"
 ---
 
 ![City reflections](https://farm5.staticflickr.com/4305/35360154024_ac42fd86eb_b.jpg)

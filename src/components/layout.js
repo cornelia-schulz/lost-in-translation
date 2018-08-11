@@ -4,7 +4,12 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCopyright, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faCopyright, 
+          faBars, 
+          faAngleDoubleLeft, 
+          faAngleDoubleRight,
+          faHome } 
+        from '@fortawesome/free-solid-svg-icons'
 
 import Header from './header'
 import Footer from './footer'
@@ -12,7 +17,7 @@ import './reset.css'
 import './layout.css'
 import './main.css'
 
-library.add(faCopyright, faBars)
+library.add(faCopyright, faBars, faAngleDoubleLeft, faAngleDoubleRight, faHome)
 
 const Layout = ({ children, data }) => (
   <StaticQuery

@@ -4,6 +4,8 @@ title: "Glossaries and translation memories"
 date: "2018-06-11"
 tags: ["glossary", "translation memory", "TM", "terms"]
 published: true
+previous: "/localisation-the-very-basics"
+next: "/machine-translations"
 ---
 ![Reflections](https://farm1.staticflickr.com/831/41818688861_1af1d4e3f9_b.jpg)
 
