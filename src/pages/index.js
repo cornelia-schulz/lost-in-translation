@@ -16,9 +16,7 @@ const IndexPage = () => (
     <main>
     <div className='row'>
         <div className='main-image col-8'>
-          <Link to="/machine-translations">
             <img src={cornwallis} alt='Cornwallis Wharf' />
-          </Link>
         </div>
         <div className='main-text col-4'>
           <h2>Machine translations</h2>
@@ -34,9 +32,7 @@ const IndexPage = () => (
       </div>
     <div className='row'>
         <div className='main-image col-8'>
-          <Link to="/glossaries-and-translation-memories">
             <img src={reflections} alt='Reflections in Auckland' />
-          </Link>
         </div>
         <div className='main-text col-4'>
           <h2>Glossaries and Translation memories</h2>
@@ -53,9 +49,7 @@ const IndexPage = () => (
       </div>
       <div className='row'>
         <div className='main-image col-8'>
-          <Link to="/localisation-the-very-basics">
             <img src={city} alt='City reflections' />
-          </Link>
         </div>
         <div className='main-text col-4'>
           <h2>Localisation - <br/>The very basics</h2>
