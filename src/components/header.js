@@ -15,17 +15,18 @@ const Header = ({ siteTitle }) => (
         margin: '0 auto'
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <p style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
             color: '#3498DB',
             textDecoration: 'none',
+            fontSize: '2rem'
           }}
         >
         <FontAwesomeIcon icon='bars' /> {siteTitle}
         </Link>
-      </h1>
+      </p>
     </header>
   </div>
 )

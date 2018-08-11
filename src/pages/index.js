@@ -14,6 +14,7 @@ const IndexPage = () => (
       <img src={McLarenFalls} alt='McLaren Falls in winter' />
     </div>
     <main>
+      <h1>Latest blog posts</h1>
     <div className='row'>
         <div className='main-image col-8'>
             <img src={cornwallis} alt='Cornwallis Wharf' />
