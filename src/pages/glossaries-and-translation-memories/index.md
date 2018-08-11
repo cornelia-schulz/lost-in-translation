@@ -6,6 +6,9 @@ tags: ["glossary", "translation memory", "TM", "terms"]
 published: true
 previous: "/localisation-the-very-basics"
 next: "/machine-translations"
+blurb: "Translation glossaries ensure consistency  and clarity in all translated materials by helping eliminate uncertainty. Are you using a glossary yet?"
+image: "https://farm1.staticflickr.com/831/41818688861_1af1d4e3f9_b.jpg"
+imagetitle: "Reflections"
 ---
 ![Reflections](https://farm1.staticflickr.com/831/41818688861_1af1d4e3f9_b.jpg)
 

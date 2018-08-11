@@ -4,7 +4,7 @@ import Layout from '../../src/components/layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Template({
-    data // this prop will be injected by the GraphQL query below
+    data // this contains props that will be injected by the GraphQL query below
 }) {
     const { markdownRemark } = data // this is the post
     const { frontmatter, html } = markdownRemark
@@ -21,17 +21,17 @@ export default function Template({
                 </div>
                 <div className='one-third-row'>
                     <div className='previous one-third'>
-                        <Link to={frontmatter.previous}>
+                        {frontmatter.previous && <Link to={frontmatter.previous}>
                             <FontAwesomeIcon icon='angle-double-left'/> Previous
-                        </Link>
+                        </Link>}
                     </div>
                     <div className='home one-third'>
                         <Link to='/'><FontAwesomeIcon icon='home'/></Link>
                     </div>
                     <div className='next one-third'>
-                        <Link to={frontmatter.next}>
+                        {frontmatter.next && <Link to={frontmatter.next}>
                             Next <FontAwesomeIcon icon='angle-double-right'/>
-                        </Link>
+                        </Link>}
                     </div>
                 </div>
             </div>
@@ -40,8 +40,8 @@ export default function Template({
 }
 
 export const pageQuery = graphql`
-    query BlogPostByPath($path: String!) {
-        markdownRemark(frontmatter: {path: {eq: $path}}) {
+    query($slug: String!) {
+        markdownRemark(fields: { slug: { eq: $slug } }) {
             html
             frontmatter {
                 date(formatString: "MMMM DD, YYYY")
