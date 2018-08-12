@@ -13,7 +13,7 @@ imagetitle: "Cornwallis"
 
 Almost everyone probably has heard of services such as Google Translate. Machine translation is the technical term for any computerised translation service. On a very basic level machine translation works by a simple substitution of words in one language for words in another. It is not quite an alternative to human translation yet as the following lines will show.
 
-First serious attempts of automated or machine translation were made in the 1950s with rule based systems (RBTM), which combined a number of grammatical rules and dictionaries. The big wave of research occurred in the 1980s when an increased amount of content needing translation inspired statistical machine translation (SMT). This method is based on large volumes of analysed data for specific language combinations. Franz Joseph Och used statistical machine translations to develop Google translate in the early 2000s.
+First serious attempts of automated or machine translation were made in the 1950s with rule based systems (RBTM), which combined a number of grammatical rules and dictionaries. The big wave of research occurred in the 1980s when an increased amount of content needing translation inspired statistical machine translation (SMT). This method is based on large volumes of analysed data for specific language combinations. Statistical machine translations were used by the German computer scientist Franz Joseph Och to develop Google translate in the early 2000s.
 
 Since 2007, SMT and SMT-RBTM hybrids were used to build sophisticated translation platforms. One example is "Moses", a statistical machine translation system funded by the European Commission. The system was trained by passing it a collection of translated texts and once trained the system quickly found the highest-probability translation with the help of an efficient search algorithm. However, all of those systems still needed a lot of human editing.
 
@@ -21,20 +21,25 @@ Simultaneously, the industry developed less ambitious computer-assisted translat
 
 The newest development in terms of machine translation is neural machine translation (NMT) or deep neural machine translation. Like statistical machine translation, the system starts by learning from a variety of translated texts but the difference is that this learning happens largely without human intervention through artificial intelligence. Simple neural networks simply take the same input and turn it into the same output every single time. Recurrent neural networks do this a bit more cleverly. They do not only take the input itself but also take into account the input around the actual input, which will result in much more accurate translations.
 
-Example:
-German original: Sollten sich Unklarheiten betreffend der Auslegung einer oder mehrerer der nachstehenden Vertragsbestimmungen ergeben, gilt im Zweifel die für den Auftraggeber günstigere Auslegung. 
-SMT translation: Should ambiguities concerning the interpretation of one or more of the following provisions of the Treaty, is in doubt for the customer more favorable interpretation. 
-NMT translation: In the event of any uncertainties concerning the interpretation of one or more of the following provisions of the contract, the interpretation which is more favorable to the contracting entity shall apply.
+_Example:_
+
+|__German original:__ |Sollten sich Unklarheiten betreffend der Auslegung einer oder mehrerer der nachstehenden Vertragsbestimmungen ergeben, gilt im Zweifel die für den Auftraggeber günstigere Auslegung. 
+|---|---|
+|__SMT translation:__ |__Should ambiguities concerning the interpretation of one or more of the following provisions of the Treaty, is in doubt for the customer more favorable interpretation.__
+|__NMT translation:__ |__In the event of any uncertainties concerning the interpretation of one or more of the following provisions of the contract, the interpretation which is more favorable to the contracting entity shall apply.__
 
 It appears that neural machine translation copes much better with syntax and produces a much more natural output. This is due to the fact that the system is able to translate the semantic meaning of entire phrases rather than translating word by word.
 
 At first sight this makes post-editing a much simpler process and means it is actually post-editing rather than a complete re-translation. However, this is still in early phases of testing and neural machine translation still only processes one sentence at the time, which can lead to errors in ambiguous phrases, where human translators would take the wider context into account:
 
-Example:
-1st sentence: The water was cold and the current strong. I went to the bank. My feet sunk into the mud. 
-NMT translation: Das Wasser war kalt und die Strömung stark, als ich zur Bank ging. Meine Füße versanken im Schlamm.
-2nd sentence: I had run out of cash. I went to the bank. It had just closed. 
-NMT translation: Ich hatte kein Bargeld mehr, also ging ich zur Bank, aber sie hatte geschlossen.
+_Example:_
+
+|__1st sentence:__ |The water was cold and the current strong. I went to the bank. My feet sunk into the mud. 
+|---|---|
+|__NMT translation:__|__Das Wasser war kalt und die Strömung stark, als ich zur Bank ging. Meine Füße versanken im Schlamm.__
+|||
+|__2nd sentence:__ |__I had run out of cash. I went to the bank. It had just closed.__
+|__NMT translation:__ |__Ich hatte kein Bargeld mehr, also ging ich zur Bank, aber sie hatte geschlossen.__
 
 In both of these sentences, neural machine translation renders the English word “bank” as “Bank” in  German, i. e. the financial institution. It did not identify the alternative meaning, i.e. river bank. Also, the pronoun “it” in the second sentence is translated as “es” (neutral) when it should be “sie” (feminine because “Bank” in German is feminine).
 

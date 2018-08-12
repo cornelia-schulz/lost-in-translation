@@ -12,7 +12,7 @@ imagetitle: "Reflections"
 ---
 ![Reflections](https://farm1.staticflickr.com/831/41818688861_1af1d4e3f9_b.jpg)
 
-Glossaries
+#Glossaries
 A glossary is a list of standardised terms in the source language of a company.
 
 Translation glossaries ensure consistency and clarity in all translated materials by helping eliminate uncertainty. No matter what product you are working on, it pays to create a list of all the important terms. These terms should then be used consistently by all translators and reviewers.
@@ -28,13 +28,17 @@ Translation glossaries exist because even the best linguists may have difficulti
 
 Things you might want to include in a glossary:
 
-Key terms: A good glossary should provide a thorough list of relevant key terms that are very specific to the subject matter or the company’s culture.
-Definitions: These key terms should be clearly defined, so that linguists understand them clearly.
-Preferred translations: Add your company’s preferred translations for terms in the glossary. This will help linguists with the accuracy and consistency of word choices in the translation.
-Terms that should not be translated: Some products, services, or proper names may need to be left in the source language. Include those, so there is no uncertainty whether or not such a term should be translated.
+__Key terms:__ A good glossary should provide a thorough list of relevant key terms that are very specific to the subject matter or the company’s culture.
+
+__Definitions:__ These key terms should be clearly defined, so that linguists understand them clearly.
+
+__Preferred translations:__ Add your company’s preferred translations for terms in the glossary. This will help linguists with the accuracy and consistency of word choices in the translation.
+
+__Terms that should not be translated:__ Some products, services, or proper names may need to be left in the source language. Include those, so there is no uncertainty whether or not such a term should be translated.
+
 A glossary is a living document, and you have to keep building it over time. Whenever a new key term is identified, make sure you add it to the glossary.
 
-Translation memories
+#Translation memories
 A translation memory or TM for short is a database that contains human translations. They are an integral part of the translation process as the speed up translation, maintain consistency and save cost.
 
 This database stores previously translated segments, which depending on the type of translation, can be sentences, paragraphs, single words, etc.
