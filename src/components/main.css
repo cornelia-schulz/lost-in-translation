@@ -49,6 +49,10 @@ a, a:visited {
   width: 100%;
 }
 
+main h1 {
+  padding-top: 4%;
+}
+
 .main-image img {
   width: 100%;
 }
