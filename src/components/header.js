@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {Link} from 'gatsby'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
-const Header = ({ siteTitle }) => (
+const Header = ({siteTitle}) => (
   <div className='header'
     style={{
       background: 'white',

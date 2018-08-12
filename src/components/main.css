@@ -72,6 +72,7 @@ a, a:visited {
   color: #fff;
   padding-left: 5%;
   font-size: 2em;
+  padding-bottom: 5px;
 }
 
 .featureContent h4 {
@@ -93,9 +94,21 @@ a, a:visited {
   line-height: 2.1rem;
 }
 
-.socialMedia p {
+.socialMedia div {
   text-align: left;
   font-size: 1.5rem;
+}
+
+.socialMediaLink, .socialMediaLink div {
+  display: inline;
+  width: 31px;
+  height: 31px;
+  padding: 3px;
+}
+
+.rss svg {
+  padding-bottom: 3px;
+  font-size: 1.7rem;
 }
 
 .share-btn {
@@ -153,6 +166,10 @@ main img, .blog-post-container img {
 
 .home {
   text-align: center;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (min-width: 992px) {
