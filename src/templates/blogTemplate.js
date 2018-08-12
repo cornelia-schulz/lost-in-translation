@@ -2,17 +2,78 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../../src/components/layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+    FacebookShareButton,
+    TwitterShareButton,
+    LinkedinShareButton,
+    EmailShareButton,
+    FacebookShareCount,
+    LinkedinShareCount,
+    FacebookIcon,
+    TwitterIcon,
+    LinkedinIcon,
+    EmailIcon
+  } from 'react-share'
 
 export default function Template({
     data // this contains props that will be injected by the GraphQL query below
 }) {
-    const { markdownRemark } = data // this is the post
+    const { markdownRemark, site } = data // this is the post
     const { frontmatter, html } = markdownRemark
+    const title = frontmatter.title
+    const shareUrl = site.siteMetadata.siteUrl+frontmatter.path
+    console.log(shareUrl)
     return (
         <Layout>
             <div className='blog-post-container'>
                 <div className='blog-img'>
                     <img className='blog-img' src={frontmatter.image} alt={frontmatter.image} />
+                </div>
+                <div className='socialMedia right'>
+                    <FacebookShareButton
+                        url={shareUrl}
+                        quote={title}
+                        className='socialMediaLink'>
+                        <FacebookIcon
+                        size={28}
+                        round={false}/>
+                    </FacebookShareButton>
+                    <FacebookShareCount
+                        url={shareUrl}
+                        className="socialMediaLink hidden">
+                        {count => count}
+                    </FacebookShareCount>
+                    <LinkedinShareButton
+                        url={shareUrl}
+                        title={title}
+                        description='A blog for everyone curious about Localisation'
+                        className='socialMediaLink'>
+                        <LinkedinIcon
+                        size={28}
+                        round={false}/>
+                    </LinkedinShareButton>
+                    <LinkedinShareCount
+                        url={shareUrl}
+                        className="socialMediaLink hidden">
+                        {count => count}
+                    </LinkedinShareCount>
+                    <TwitterShareButton
+                        url={shareUrl}
+                        title={title}
+                        className='socialMediaLink'>
+                        <TwitterIcon
+                        size={28}
+                        round={false}/>
+                    </TwitterShareButton>
+                    <EmailShareButton
+                        url={shareUrl}
+                        subject='Lost in translation'
+                        body='Check out this blog I found about localisation at https://www.cornelia-schulz.net' 
+                        className='socialMediaLink'>
+                        <EmailIcon
+                        size={28}
+                        round={false}/>
+                    </EmailShareButton>
                 </div>
                 <div className='blog-post'>
                     <h1>{frontmatter.title}</h1>
@@ -41,6 +102,11 @@ export default function Template({
 
 export const pageQuery = graphql`
     query($slug: String!) {
+        site {
+            siteMetadata {
+              siteUrl
+            }
+        },
         markdownRemark(fields: { slug: { eq: $slug } }) {
             html
             frontmatter {

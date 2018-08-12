@@ -120,6 +120,10 @@ a, a:visited {
   text-align: center;
 }
 
+.right {
+  text-align: right;
+}
+
 footer {
   border-top: 1px solid #eee;
   font-size: 0.8rem;

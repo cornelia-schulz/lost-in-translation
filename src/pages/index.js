@@ -85,7 +85,7 @@ const IndexPage = ({
               <EmailShareButton
                 url={shareUrl}
                 subject='Lost in translation'
-                body='Check out this blog I found about localisation'
+                body='Check out this blog I found about localisation at https://www.cornelia-schulz.net'
                 className='socialMediaLink'>
                 <EmailIcon
                 size={28}
