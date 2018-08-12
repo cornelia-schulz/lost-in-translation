@@ -6,4 +6,5 @@ I have worked in software localisation for a good few years now and often I find
 
 
 Find this blog at https://www.cornelia-schulz.net
+Subscribe via RSS https://www.cornelia-schulz.net/rss.xml
 

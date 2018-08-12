@@ -8,7 +8,8 @@ import { faCopyright,
           faBars, 
           faAngleDoubleLeft, 
           faAngleDoubleRight,
-          faHome } 
+          faHome,
+          faRss } 
         from '@fortawesome/free-solid-svg-icons'
 
 import Header from './header'
@@ -17,7 +18,7 @@ import './reset.css'
 import './layout.css'
 import './main.css'
 
-library.add(faCopyright, faBars, faAngleDoubleLeft, faAngleDoubleRight, faHome)
+library.add(faCopyright, faBars, faAngleDoubleLeft, faAngleDoubleRight, faHome, faRss)
 
 const Layout = ({ children, data }) => (
   <StaticQuery

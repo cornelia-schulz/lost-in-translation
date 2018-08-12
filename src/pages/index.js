@@ -1,7 +1,8 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import PostLink from "../components/post-link"
 import Layout from '../components/layout'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import McLarenFalls from '../images/McLarenFalls.jpg'
 
 
@@ -16,8 +17,25 @@ const IndexPage = ({
 
   return (
     <Layout>
-      <div className='banner'>
-        <img src={McLarenFalls} alt='McLaren Falls in winter' />
+      <div className='bannerImage'
+        style={{
+          backgroundImage: `url(${McLarenFalls})`,
+          backgroundSize: 'cover',
+          width: '100%',
+          position: 'relative',
+          height: '500px'
+        }}>
+        {/* <img src={McLarenFalls} alt='McLaren Falls in winter' /> */}
+        <div className='featureContent'>
+          <h4>FEATURED ARTICLE</h4>
+          <Link to='/machine-translations'><h2>Machine translations</h2></Link>
+          <p>Published by Cornelia Schulz in August 2018</p>
+          <div className='socialMedia'>
+            <p>
+              <Link to='/rss.xml'><FontAwesomeIcon icon='rss'/></Link>
+            </p>
+          </div>
+        </div>
       </div>
       <main>
         <h1>Latest blog posts</h1>
