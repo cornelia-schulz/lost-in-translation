@@ -32,7 +32,7 @@ const IndexPage = ({
           <p>Published by Cornelia Schulz in August 2018</p>
           <div className='socialMedia'>
             <p>
-              <Link to='/rss.xml'><FontAwesomeIcon icon='rss'/></Link>
+              <a href='/rss.xml'><FontAwesomeIcon icon='rss'/></a>
             </p>
           </div>
         </div>
