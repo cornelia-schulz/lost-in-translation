@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../../src/components/layout'
+import Disqus from 'disqus-react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     FacebookShareButton,
@@ -22,23 +23,12 @@ export default function Template({
     const { frontmatter, html } = markdownRemark
     const title = frontmatter.title
     const shareUrl = site.siteMetadata.siteUrl+frontmatter.path
-
-     /**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-
-    // const disqus_config = function () {
-    // this.page.url = shareUrl  // Replace PAGE_URL with your page's canonical URL variable
-    // this.page.identifier = frontmatter.path // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    // };
-    
-    // (function() { // DON'T EDIT BELOW THIS LINE
-    // var d = document, s = d.createElement('script')
-    // s.src = 'https://www-cornelia-schulz-net.disqus.com/embed.js'
-    // s.setAttribute('data-timestamp', +new Date());
-    // (d.head || d.body).appendChild(s)
-    // })()
-    {/* <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> */}
+    const disqusShortname = 'www-cornelia-schulz-net'
+    const disqusConfig = {
+        
+        identifier: frontmatter.title,
+        title: frontmatter.title
+    }
 
     return (
         <Layout>
@@ -97,7 +87,7 @@ export default function Template({
                     <h2>{frontmatter.date}</h2>
                     <div className='blog-post-content' dangerouslySetInnerHTML={{ __html: html }} />
                 </div>
-                <div id="disqus_thread"></div>
+                <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
                 <div className='one-third-row'>
                     <div className='previous one-third'>
                         {frontmatter.previous && <Link to={frontmatter.previous}>
