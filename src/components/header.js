@@ -24,7 +24,7 @@ const Header = ({siteTitle}) => (
             fontSize: '2rem'
           }}
         >
-        <FontAwesomeIcon icon='bars' /> {siteTitle}
+         {siteTitle}
         </Link>
       </p>
     </header>
