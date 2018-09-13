@@ -42,8 +42,8 @@ const IndexPage = ({
         {/* <img src={McLarenFalls} alt='McLaren Falls in winter' /> */}
         <div className='featureContent'>
           <h4>FEATURED ARTICLE</h4>
-          <Link to='/machine-translations'><h2>Machine translations</h2></Link>
-          <p>Published by Cornelia Schulz in August 2018</p>
+          <Link to='/language-hierarchies'><h2>Language Hierarchies</h2></Link>
+          <p>Published by Cornelia Schulz in September 2018</p>
           <div className='socialMedia'>
             <div>
               <a className='socialMediaLink rss' href='/rss.xml'><FontAwesomeIcon icon='rss'/></a>
