@@ -5,6 +5,7 @@ date: "2018-08-08"
 tags: ["machine translation", "RBTM", "SMT", "rule based", "statistical machine translation"]
 published: true
 previous: "/glossaries-and-translation-memories"
+next: "/language-hierarchies"
 blurb: "Almost everyone probably has heard of services such as Google Translate. Machine translation is the technical term for any computerised translation service."
 image: "https://farm5.staticflickr.com/4074/35689778056_bc31f34a23_b.jpg"
 imagetitle: "Cornwallis"
