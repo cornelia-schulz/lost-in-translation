@@ -10,7 +10,7 @@ image: "https://farm2.staticflickr.com/1937/43949588845_7d87079441_c.jpg"
 imagetitle: "View from Lake Taupo"
 ---
 
-![City reflections](https://farm2.staticflickr.com/1937/43949588845_7d87079441_c.jpg)
+![City reflections](https://farm2.staticflickr.com/1937/43949588845_7d87079441_c.jpg "Looking towards the National Park from Lake Taupo")
 
 Recently I participated in the pretty awesome Dev Academy Web Developer bootcamp to learn React and fullstack development and I enjoyed that immensely. I asked myself what's a good way to localise content in React applications? After some googling I came across [i-18next](https://www.i18next.com/ "i18next documentation") and more specifically [react-i18next](https://github.com/i18next/react-i18next "react-i18next documentation").
 

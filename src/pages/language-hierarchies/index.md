@@ -11,7 +11,7 @@ image: "https://farm2.staticflickr.com/1843/44541228262_fa33c19e2f_k.jpg"
 imagetitle: "Tongariro Evening"
 ---
 
-![City reflections](https://farm2.staticflickr.com/1843/44541228262_fa33c19e2f_k.jpg)
+![Tongariro Evening](https://farm2.staticflickr.com/1843/44541228262_fa33c19e2f_k.jpg "Looking towards Mt Ngauruhoe in the National Park")
 
 
 When working with languages you will probably come across culture specific languages such as German spoken in Germany, German spoken in Austria or Swiss German. It makes sense to organise your translated files in such a way that your German speaking customers only ever see German. However, if you are missing translations for a specific software string, it is good practise to fall back to your default culture and not show your customers that a string is missing or not show them anything at all.

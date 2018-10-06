@@ -10,7 +10,7 @@ blurb: "Translation glossaries ensure consistency  and clarity in all translated
 image: "https://farm1.staticflickr.com/831/41818688861_1af1d4e3f9_b.jpg"
 imagetitle: "Reflections"
 ---
-![Reflections](https://farm1.staticflickr.com/831/41818688861_1af1d4e3f9_b.jpg)
+![Reflections](https://farm1.staticflickr.com/831/41818688861_1af1d4e3f9_b.jpg "Auckland CBD on a rainy evening")
 
 #Glossaries
 A glossary is a list of standardised terms in the source language of a company.
