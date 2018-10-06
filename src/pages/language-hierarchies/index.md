@@ -7,11 +7,11 @@ published: true
 previous: "/machine-translations"
 next: "/localisation-With-I18next"
 blurb: "Have you come across different versions of a language and wondered how to incorporate these versions into your software with a minimum amount of effort?"
-image: "https://farm2.staticflickr.com/1843/44541228262_fa33c19e2f_k.jpg"
+image: "https://farm2.staticflickr.com/1843/44541228262_8bf5240005_z.jpg"
 imagetitle: "Tongariro Evening"
 ---
 
-![Tongariro Evening](https://farm2.staticflickr.com/1843/44541228262_fa33c19e2f_k.jpg "Looking towards Mt Ngauruhoe in the National Park")
+![Tongariro Evening](https://farm2.staticflickr.com/1843/44541228262_8bf5240005_b.jpg "Looking towards Mt Ngauruhoe in the National Park")
 
 
 When working with languages you will probably come across culture specific languages such as German spoken in Germany, German spoken in Austria or Swiss German. It makes sense to organise your translated files in such a way that your German speaking customers only ever see German. However, if you are missing translations for a specific software string, it is good practise to fall back to your default culture and not show your customers that a string is missing or not show them anything at all.
