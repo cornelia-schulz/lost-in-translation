@@ -6,7 +6,7 @@ tags: ["localisation", "localization", "internationalisation", "internationaliza
 published: true
 next: "/glossaries-and-translation-memories"
 blurb: "Have you ever wondered what the difference is between localisation and internationalisation is?"
-image: "https://farm5.staticflickr.com/4305/35360154024_ac42fd86eb_b.jpg"
+image: "https://farm5.staticflickr.com/4305/35360154024_ac42fd86eb.jpg"
 imagetitle: "City reflections"
 ---
 

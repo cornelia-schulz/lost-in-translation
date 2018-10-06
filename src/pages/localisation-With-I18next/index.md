@@ -6,7 +6,7 @@ tags: ["localisation", "localization", "internationalisation", "internationaliza
 published: true
 previous: "/language-hierarchies"
 blurb: "If you are looking for a way to get set up quickly to show content in more than one language in React, you might like i18next, a great internationalisation framework for JavaScript."
-image: "https://farm2.staticflickr.com/1937/43949588845_7d87079441_c.jpg"
+image: "https://farm2.staticflickr.com/1937/43949588845_7d87079441.jpg"
 imagetitle: "View from Lake Taupo"
 ---
 

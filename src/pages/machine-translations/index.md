@@ -7,7 +7,7 @@ published: true
 previous: "/glossaries-and-translation-memories"
 next: "/language-hierarchies"
 blurb: "Almost everyone probably has heard of services such as Google Translate. Machine translation is the technical term for any computerised translation service."
-image: "https://farm5.staticflickr.com/4074/35689778056_bc31f34a23_b.jpg"
+image: "https://farm5.staticflickr.com/4074/35689778056_bc31f34a23.jpg"
 imagetitle: "Cornwallis"
 ---
 ![Cornwallis](https://farm5.staticflickr.com/4074/35689778056_bc31f34a23_b.jpg "Cornwallis Wharf at sunset")
