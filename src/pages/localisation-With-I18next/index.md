@@ -5,7 +5,7 @@ date: "2018-10-06"
 tags: ["localisation", "localization", "internationalisation", "internationalization", "translation", "i18next", "react-i18next", "strings"]
 published: true
 previous: "/language-hierarchies"
-blurb: "Using i18next to quickly localise content in React"
+blurb: "If you are looking for a way to get set up quickly to show content in more than one language in React, you might like i18next, a great internationalisation framework for JavaScript."
 image: "https://farm2.staticflickr.com/1937/43949588845_7d87079441_c.jpg"
 imagetitle: "View from Lake Taupo"
 ---

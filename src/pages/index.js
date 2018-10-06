@@ -3,7 +3,7 @@ import {Link, graphql} from 'gatsby';
 import PostLink from '../components/post-link';
 import Layout from '../components/layout';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import McLarenFalls from '../images/McLarenFalls.jpg';
+import Piha from '../images/Bethells.jpg';
 import {
   FacebookShareButton,
   TwitterShareButton,
@@ -29,7 +29,7 @@ const IndexPage = ({data: {site, allMarkdownRemark: {edges}}}) => {
       <div
         className="bannerImage"
         style={{
-          backgroundImage: `url(${McLarenFalls})`,
+          backgroundImage: `url(${Piha})`,
           backgroundSize: 'cover',
           width: '100%',
           position: 'relative',
