@@ -7,7 +7,7 @@ published: true
 previous: "/machine-translations"
 next: "/localisation-With-I18next"
 blurb: "Have you come across different versions of a language and wondered how to incorporate these versions into your software with a minimum amount of effort?"
-image: "https://farm2.staticflickr.com/1843/44541228262_8bf5240005_z.jpg"
+image: "https://farm2.staticflickr.com/1843/44541228262_8bf5240005.jpg"
 imagetitle: "Tongariro Evening"
 ---
 
