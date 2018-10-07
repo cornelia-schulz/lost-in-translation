@@ -7,10 +7,9 @@ published: true
 previous: "/glossaries-and-translation-memories"
 next: "/language-hierarchies"
 blurb: "Almost everyone probably has heard of services such as Google Translate. Machine translation is the technical term for any computerised translation service."
-image: "https://farm5.staticflickr.com/4074/35689778056_bc31f34a23.jpg"
+image: "/static/cornwallis-73c1668aa3a8f0e660ffe6b945e6b775.jpg"
 imagetitle: "Cornwallis"
 ---
-![Cornwallis](https://farm5.staticflickr.com/4074/35689778056_bc31f34a23_b.jpg "Cornwallis Wharf at sunset")
 
 Almost everyone probably has heard of services such as Google Translate. Machine translation is the technical term for any computerised translation service. On a very basic level machine translation works by a simple substitution of words in one language for words in another. It is not quite an alternative to human translation yet as the following lines will show.
 

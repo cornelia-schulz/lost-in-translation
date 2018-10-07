@@ -7,10 +7,9 @@ published: true
 previous: "/localisation-the-very-basics"
 next: "/machine-translations"
 blurb: "Translation glossaries ensure consistency  and clarity in all translated materials by helping eliminate uncertainty. Are you using a glossary yet?"
-image: "https://farm1.staticflickr.com/831/41818688861_1af1d4e3f9.jpg"
+image: "/static/city-reflections-evening-697c25e0fe90ca69e9ced0612e9cbf53.jpg"
 imagetitle: "Reflections"
 ---
-![Reflections](https://farm1.staticflickr.com/831/41818688861_1af1d4e3f9_b.jpg "Auckland CBD on a rainy evening")
 
 #Glossaries
 A glossary is a list of standardised terms in the source language of a company.

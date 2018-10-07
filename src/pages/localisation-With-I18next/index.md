@@ -1,16 +1,14 @@
 ---
 path: "/localisation-With-I18next"
 title: "Localisation in React with I18next"
-date: "2018-10-06"
+date: "2018-10-07"
 tags: ["localisation", "localization", "internationalisation", "internationalization", "translation", "i18next", "react-i18next", "strings"]
 published: true
 previous: "/language-hierarchies"
 blurb: "If you are looking for a way to get set up quickly to show content in more than one language in React, you might like i18next, a great internationalisation framework for JavaScript."
-image: "https://farm2.staticflickr.com/1937/43949588845_7d87079441.jpg"
+image: "/static/lake-taupo-evening-e25da1c466502f4dbc0f0a5fbf1691a0.jpg"
 imagetitle: "View from Lake Taupo"
 ---
-
-![City reflections](https://farm2.staticflickr.com/1937/43949588845_7d87079441_b.jpg "Looking towards the National Park from Lake Taupo")
 
 Recently I participated in the pretty awesome Dev Academy Web Developer bootcamp to learn React and fullstack development and I enjoyed that immensely. I asked myself what's a good way to localise content in React applications? After some googling I came across [i-18next](https://www.i18next.com/ "i18next documentation") and more specifically [react-i18next](https://github.com/i18next/react-i18next "react-i18next documentation").
 
@@ -46,7 +44,6 @@ import { reactI18nextModule } from 'react-i18next'
 i18n
   .use(Backend)
   .use(LanguageDetector)
-  .use(reactI18nextModule)
   .init({
     fallbackLng: 'en',
 
@@ -110,13 +107,35 @@ locales/de/strings.json
 ```
 As you can see in my two little examples above, both the English and the German json files contain the same keys on the left hand side, which I will be using to load the translations onto my pages from my components.
 
-But before I could use the keys in the component, I had to import i18next into my index.js file. That's just one simple line:
+But before I could use the keys in the component, I had to import i18next into my index.js file and include it in the render method:
 ```
-import './i18n'
+import i18n from './i18n'
+
+document.addEventListener ('DOMContentLoaded', () => {
+  render (
+    <Provider store={store}>
+      <I18nextProvider i18n={i18n}>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </I18nextProvider>
+    </Provider>,
+    document.getElementById ('app')
+  )
+})
+```
+Next I added "withNamespaces" to my App.jsx file and included it in the export, so other components have access to i18n via their props.
+```
+import { withNamespaces } from 'react-i18next'
+class App extends React.Component {
+  ...
+}
+export default withNamespaces('strings')(App)
 ```
 Once that was done, I could call i18next from my components to actually display my content in both English and German. In my example here I'm looking at the Header.jsx file. First I imported I18n at the top of my file. Then I wrapped the content of my render section into an <I18> tag. Next I simply used {t('key.from.json.file')} wherever I had some text: 
 ```
-import { I18n } from 'react-i18next'
+import { withNamespaces } from 'react-i18next'
+import i18n from 'i18next'
 
 class Header extends React.Component {
   constructor(props) {
@@ -130,37 +149,32 @@ class Header extends React.Component {
   }
 
   render() {
+    let { t, i18n } = this.props
     return (
-      <I18n ns="strings">
-        {
-          (t, { i18n }) => (
-            <header>
-              <nav className="navbar" role="navigation">
-                <div className="logo header  header-left">
-                  <img src="/images/Logo.PNG" alt="Photo Locations" />
-                </div>
-                <div className="languages">
-                <button className="button language" onClick={() => this.changeLanguage('de')}>{t('languages.de')}</button>
-                <button className="button language" onClick={() => this.changeLanguage('en')}>{t('languages.en')}</button>
-                </div>
-                <div className="header">
-                  <Route exact path='/' component={Search} />
-                </div>
-                <div className="dropdown header">
-                  <button className="dropbtn" onClick={this.toggleVisibility}>
-                    <i className="fa fa-bars" aria-hidden="true"></i>
-                  </button>
-                  <div className="dropdown-content">
-                    <Link to="/">{t('header.home')}</Link>
-                    <Link to="/about">{t('header.about')}</Link>
-                    <Link to="/contact">{t('header.contact')}</Link>
-                  </div>
-                </div>
-              </nav>
-            </header>
-          )
-        }
-      </I18n>
+      <header>
+        <nav className="navbar" role="navigation">
+          <div className="logo header  header-left">
+            <img src="/images/Logo.PNG" alt="Photo Locations" />
+          </div>
+          <div className="languages">
+          <button className="button language" onClick={() => this.changeLanguage('de')}>{t('languages.de')}</button>
+          <button className="button language" onClick={() => this.changeLanguage('en')}>{t('languages.en')}</button>
+          </div>
+          <div className="header">
+            <Route exact path='/' component={Search} />
+          </div>
+          <div className="dropdown header">
+            <button className="dropbtn" onClick={this.toggleVisibility}>
+              <i className="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div className="dropdown-content">
+              <Link to="/">{t('header.home')}</Link>
+              <Link to="/about">{t('header.about')}</Link>
+              <Link to="/contact">{t('header.contact')}</Link>
+            </div>
+          </div>
+        </nav>
+      </header>
     )
   }
 }
@@ -173,7 +187,7 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-export default connect (null, mapDispatchToProps)(Header)
+export default withNamespaces('strings')(connect (null, mapDispatchToProps)(Header))
 ```
 
 To quickly test the functionality of changing the language I added some buttons, which will be integrated into the menu later on. The full code can be found on [Github](https://github.com/cornelia-schulz/photolocations "Photo Locations on Github") .

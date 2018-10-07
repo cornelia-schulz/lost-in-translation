@@ -1,9 +1,9 @@
-import React from 'react';
-import {Link, graphql} from 'gatsby';
-import PostLink from '../components/post-link';
-import Layout from '../components/layout';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import Piha from '../images/Bethells.jpg';
+import React from 'react'
+import {Link, graphql} from 'gatsby'
+import PostLink from '../components/post-link'
+import Layout from '../components/layout'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import Piha from '../images/Bethells.jpg'
 import {
   FacebookShareButton,
   TwitterShareButton,
@@ -15,7 +15,7 @@ import {
   TwitterIcon,
   LinkedinIcon,
   EmailIcon,
-} from 'react-share';
+} from 'react-share'
 
 const IndexPage = ({data: {site, allMarkdownRemark: {edges}}}) => {
   const Posts = edges
@@ -127,4 +127,4 @@ export const pageQuery = graphql`
       }
     }
   }
-  `;
+  `
