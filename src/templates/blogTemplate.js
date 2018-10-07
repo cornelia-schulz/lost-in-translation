@@ -40,7 +40,7 @@ export default function Template({
     return (
         <Layout>
             <div className='blog-post-container'>
-                <div className='blog-img'>
+                <div className='blog-img' style={{ marginTop: '10px' }}>
                     <img className='blog-img' src={frontmatter.image} alt={frontmatter.imagetitle} />
                 </div>
                 <div className='socialMedia right'>
