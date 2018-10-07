@@ -3,12 +3,12 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../../src/components/layout'
 import Disqus from 'disqus-react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import Img from "gatsby-image"
-// import taupo from '../images/lake-taupo-evening.jpg'
-// import cityEvening from '../images/city-reflections-evening.jpg'
-// import cityMorning from '../images/city-reflections-morning.jpg'
-// import cornwallis from '../images/cornwallis.jpg'
-// import nationalPark from '../images/national-park-evening.jpg'
+import Img from "gatsby-image"
+import taupo from '../images/lake-taupo-evening.jpg'
+import cityEvening from '../images/city-reflections-evening.jpg'
+import cityMorning from '../images/city-reflections-morning.jpg'
+import cornwallis from '../images/cornwallis.jpg'
+import nationalPark from '../images/national-park-evening.jpg'
 
 import {
     FacebookShareButton,
