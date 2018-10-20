@@ -107,3 +107,10 @@ To run the test, type:
 jest about
 ```
 into the console.
+
+###Something to watch out for
+Because the mock react-i18next.js file contains the ES6 spread operator, which is not initially supported by Jest, I had to add:
+```
+yarn add @babel/plugin-syntax-object-rest-spread
+```
+I also upgraded Babel to version 7 to support this.
