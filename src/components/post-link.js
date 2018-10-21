@@ -4,10 +4,10 @@ import { Link } from 'gatsby'
 const PostLink = ({ post }) => (
   <div className='row'>
     <div className='main-image col-8'>
-      <img src={post.frontmatter.image} alt={post.frontmatter.imagetitle} />
+      <a className="postlink" href={post.frontmatter.path}><img src={post.frontmatter.image} alt={post.frontmatter.imagetitle} /></a>
     </div>
     <div className='main-text col-4'>
-      <h2>{post.frontmatter.title}</h2>
+      <a className="postlink" href={post.frontmatter.path}><h2>{post.frontmatter.title}</h2></a>
       <p>
         {post.frontmatter.blurb}
       </p>
