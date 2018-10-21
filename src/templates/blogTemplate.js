@@ -10,6 +10,7 @@ import cityMorning from '../images/city-reflections-morning.jpg'
 import cornwallis from '../images/cornwallis.jpg'
 import nationalPark from '../images/national-park-evening.jpg'
 import muriwai from '../images/muriwai.jpg'
+import jestAbout from '../images/jest-about.jpg'
 
 import {
     FacebookShareButton,
