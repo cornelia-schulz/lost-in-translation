@@ -25,6 +25,11 @@ a, a:visited {
   color: #3498DB;
 }
 
+.postlink {
+  color: #111111;
+  text-decoration: none;
+}
+
 .button {
   height: 38px;
   padding: 0 30px;
