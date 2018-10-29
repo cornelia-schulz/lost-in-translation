@@ -1,8 +1,8 @@
 # Lost in Translation
-A blog about localisation tips and tricks
+A personal blog about localisation and development
 
 
-I have worked in software localisation for a good few years now and often I find myself googling and collecting information and how to’s on various topics related to localisation and I thought, rather than keeping it all hidden in my little notebook, I will summarise things I research and collate them in this blog.
+I have worked in software localisation for a good few years now and have recently finished the Enspiral Dev Academy's Web development bootcamp and enjoy all language related things as well as trying out new bits of code. This blog is about interesting things that I came across and got to play with.
 
 
 Find this blog at https://www.cornelia-schulz.net
