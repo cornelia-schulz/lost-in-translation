@@ -1,9 +1,8 @@
 import React from 'react'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCopyright, 
           faBars, 
@@ -12,7 +11,6 @@ import { faCopyright,
           faHome,
           faRss } 
         from '@fortawesome/free-solid-svg-icons'
-
 import Header from './header'
 import Footer from './footer'
 import './reset.css'
