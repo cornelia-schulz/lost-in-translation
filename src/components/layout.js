@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCopyright, 
