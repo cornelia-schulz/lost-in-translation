@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Octocat from '../images/Octocat.png'
 import linkedIn from '../images/In-2CRev-34px-TM.png'
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
 const Footer = () => (
   <footer>
