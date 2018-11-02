@@ -7,7 +7,7 @@ const Footer = () => (
   <footer>
     <FontAwesomeIcon icon='copyright'/> Cornelia Schulz 2018
     <p>
-    <a href='https://github.com/cornelia-schulz' target='_blank'>
+    <a className='tooltip' href='https://github.com/cornelia-schulz' target='_blank' tooltip='Check out my Github'>
     <img src={Octocat} alt='Github' 
       style={{
         margin: '0',
@@ -16,7 +16,7 @@ const Footer = () => (
         padding: '0',
         height: '35px',
       }}/></a>
-      <a href='https://www.linkedin.com/in/cornelia-schulz/' target='_blank'>
+      <a className='tooltip' href='https://www.linkedin.com/in/cornelia-schulz/' target='_blank' tooltip='Get in touch via LinkedIn'>
         <img src={linkedIn} alt='LinkedIn' />
       </a></p>
   </footer>
