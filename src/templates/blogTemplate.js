@@ -3,13 +3,23 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../../src/components/layout'
 import Disqus from 'disqus-react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// eslint-disable-next-line
 import Img from "gatsby-image"
+// eslint-disable-next-line
 import taupo from '../images/lake-taupo-evening.jpg'
+// eslint-disable-next-line
 import cityEvening from '../images/city-reflections-evening.jpg'
+// eslint-disable-next-line
 import cityMorning from '../images/city-reflections-morning.jpg'
+// eslint-disable-next-line
 import cornwallis from '../images/cornwallis.jpg'
+// eslint-disable-next-line
 import nationalPark from '../images/national-park-evening.jpg'
+// eslint-disable-next-line
 import muriwai from '../images/muriwai.jpg'
+// eslint-disable-next-line
+import milkywayMuriwai from '../images/muriwai-milkyway.jpg'
+// eslint-disable-next-line
 import jestAbout from '../images/jest-about.jpg'
 
 import {
