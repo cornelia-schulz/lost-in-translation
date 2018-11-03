@@ -140,7 +140,7 @@ footer {
   height: 55px;
   padding-top: 20px;
 }
-
+/* 
 [tooltip] {
   margin: 20px;
   position: relative;
@@ -172,7 +172,7 @@ footer {
     min-width: 80px;
     border-radius: 5px;
     pointer-events: none;
-}
+} */
 
 main {
   width: 97%;
