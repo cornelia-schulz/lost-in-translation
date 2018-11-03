@@ -1,8 +1,8 @@
 import React from 'react'
-import '@fortawesome/fontawesome-svg-core/styles.css'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCopyright, 
           faBars, 
@@ -11,6 +11,7 @@ import { faCopyright,
           faHome,
           faRss } 
         from '@fortawesome/free-solid-svg-icons'
+
 import Header from './header'
 import Footer from './footer'
 import './reset.css'
@@ -35,8 +36,8 @@ const Layout = ({ children, data }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Localisation blog' },
-            { name: 'keywords', content: 'localisation, language, internationalisation' },
+            { name: 'description', content: 'Personal blog about Localisation and Web development' },
+            { name: 'keywords', content: 'localisation, language, internationalisation, React, web development' },
           ]}
         >
           <html lang="en" />
