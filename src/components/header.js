@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
+import Logo from '../images/CS_web_developer_blue.png'
 
 const Header = ({siteTitle}) => (
   <div className='header'
@@ -15,12 +16,20 @@ const Header = ({siteTitle}) => (
       }}
     >
       <p style={{ margin: 0 }}>
+        <img src={Logo} 
+        style={{
+          height: '27px',
+          display: 'inline',
+          marginBottom: 0,
+          marginRight: '5px'
+        }} />
         <Link
           to="/"
           style={{
             color: '#3498DB',
             textDecoration: 'none',
-            fontSize: '2rem'
+            fontSize: '2rem',
+            display: 'inline'
           }}
         >
          {siteTitle}
