@@ -1,8 +1,8 @@
 # Lost in Translation
-A personal blog about localisation and development
+A personal blog about localisation and development.
 
 
-I have worked in software localisation for a good few years now and have recently finished the Enspiral Dev Academy's Web development bootcamp and enjoy all language related things as well as trying out new bits of code. This blog is about interesting things that I came across and got to play with.
+I have worked in software localisation for a good few years now and have recently finished the Enspiral Dev Academy's Web development bootcamp and enjoy all language related things as well as trying out new bits of code. This blog is about interesting things that I come across and got to play with.
 
 
 Find this blog at https://www.cornelia-schulz.net
