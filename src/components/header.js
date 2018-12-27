@@ -16,7 +16,7 @@ const Header = ({siteTitle}) => (
       }}
     >
       <p style={{ margin: 0 }}>
-        <img src={Logo} 
+        <img src={Logo} alt='Cornelia Schulz logo'
         style={{
           height: '27px',
           display: 'inline',
