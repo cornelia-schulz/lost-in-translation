@@ -20,7 +20,7 @@ import {
 const IndexPage = ({data: {site, allMarkdownRemark: {edges}}}) => {
   const Posts = edges
     .filter (edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map (edge => <PostLink key={edge.node.id} post={edge.node} />);
+    .map (edge => <PostLink key={edge.node.id} post={edge.node} />)
   const shareUrl = site.siteMetadata.siteUrl;
   const title = site.siteMetadata.title;
 
@@ -38,8 +38,8 @@ const IndexPage = ({data: {site, allMarkdownRemark: {edges}}}) => {
       >
         <div className="featureContent">
           <h4 style={{ color: '#fff' }}>FEATURED ARTICLE</h4>
-          <Link to="/react-hooks"><h2>React Hooks</h2></Link>
-          <p>Published by Cornelia Schulz in November 2018</p>
+          <Link to="/localisation-and-web-accessibility"><h2>Localisation and web accessibility</h2></Link>
+          <p>Published by Cornelia Schulz in December 2018</p>
           <div className="socialMedia">
             <div>
               <a className="socialMediaLink rss" href="/rss.xml">
