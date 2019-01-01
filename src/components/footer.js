@@ -4,10 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Octocat from '../images/Octocat.png'
 import linkedIn from '../images/In-2CRev-34px-TM.png'
 
+let date = new Date()
+let year = date.getFullYear()
 
 const Footer = () => (
   <footer>
-    <FontAwesomeIcon icon='copyright'/> Cornelia Schulz 2018
+    <FontAwesomeIcon icon='copyright'/> Cornelia Schulz 2018 - {year}
     <p>
     <a className='tooltip' href='https://github.com/cornelia-schulz' target='_blank' rel='noopener noreferrer' tooltip='Check out my Github'>
     <img src={Octocat} alt='Github' 
