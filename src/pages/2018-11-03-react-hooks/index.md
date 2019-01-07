@@ -1,11 +1,11 @@
 ---
-path: "/react-hooks"
+path: "/2018-11-03-react-hooks"
 title: "React Hooks"
 date: "2018-11-03"
 tags: ["react", "hooks"]
 published: true
-previous: "/I18next-testing-with-Jest"
-next: "/localisation-and-web-accessibility"
+previous: "/2018-10-20-I18next-testing-with-Jest"
+next: "/2018-12-29-localisation-and-web-accessibility"
 blurb: "React 16.7.0alpha brings us a new feature called React Hooks. Hooks were introduced to to be able to use state in functional components without having to rewrite the component to a class. Read on for more info."
 image: "/static/muriwai-milkyway-756273e8a8e77bef45b1dd944e8f0ce6.jpg"
 imagetitle: "Milkyway over Muriwai"

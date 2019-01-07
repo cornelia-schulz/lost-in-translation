@@ -1,11 +1,11 @@
 ---
-path: "/localisation-With-I18next"
+path: "/2018-10-07-localisation-With-I18next"
 title: "Localisation in React with I18next"
 date: "2018-10-07"
 tags: ["localisation", "localization", "internationalisation", "internationalization", "translation", "i18next", "react-i18next", "strings"]
 published: true
-previous: "/language-hierarchies"
-next: "/I18next-testing-with-Jest"
+previous: "/2018-09-13-language-hierarchies"
+next: "/2018-10-20-I18next-testing-with-Jest"
 blurb: "If you are looking for a way to get set up quickly to show content in more than one language in React, you might like i18next, a great internationalisation framework for JavaScript."
 image: "/static/lake-taupo-evening-e25da1c466502f4dbc0f0a5fbf1691a0.jpg"
 imagetitle: "View from Lake Taupo"

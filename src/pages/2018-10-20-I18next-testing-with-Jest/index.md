@@ -1,11 +1,11 @@
 ---
-path: "/I18next-testing-with-Jest"
+path: "/2018-10-20-I18next-testing-with-Jest"
 title: "Testing React and I18next with Jest"
 date: "2018-10-20"
 tags: ["localisation", "localization", "language hierarchies", "internationalization", "translation", "regional", "cultures", "testing", "React", "Jest"]
 published: true
-previous: "/localisation-With-I18next"
-next: "/react-hooks"
+previous: "/2018-10-07-localisation-With-I18next"
+next: "/2018-11-03-react-hooks"
 blurb: "If you are interested in testing React components that make use of I18next, click through to this blog post."
 image: "/static/muriwai-ccebceaf605ed9f3eab39aa4288248ed.jpg"
 imagetitle: "Muriwai"
