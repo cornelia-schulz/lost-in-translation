@@ -23,6 +23,8 @@ import milkywayMuriwai from '../images/muriwai-milkyway.jpg'
 import jestAbout from '../images/jest-about.jpg'
 // eslint-disable-next-line
 import wildMuriwai from '../images/wild-muriwai.jpg'
+// eslint-disable-next-line
+import jacksLighthouse from '../images/jacks-lighthouse.jpg'
 
 import {
     FacebookShareButton,

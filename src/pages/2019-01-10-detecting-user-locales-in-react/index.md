@@ -6,8 +6,8 @@ tags: ["localisation", "localization", "internationalisation", "internationaliza
 published: true
 previous: "/2018-12-29-localisation-and-web-accessibility"
 blurb: "If you want to display different content, perhaps in different languages for people from different countries, or display targeted information to visitors from different locations you need to detect the user locale. Read on to find out how."
-image: ""
-imagetitle: ""
+image: "/static/jacks-lighthouse-0e26eaacdc28a37597e1804e123510ab.jpg"
+imagetitle: "Jack's Lighthouse"
 ---
 
 Detecting the location of your website’s users is useful for a variety of reasons. You might for instance want to display different content, perhaps in different languages for people from different countries, or display targeted information to visitors from different locations. 
