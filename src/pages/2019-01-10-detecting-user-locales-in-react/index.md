@@ -16,21 +16,59 @@ Detecting the location of your website’s users is useful for a variety of reas
 
 A user locale indicates which default settings a user wants to use to format dates, times, currency, and large numbers. The user locale is not the language. The only influence the user locale has on the language is on the names of the days and months. For example, if you use the long date format to display "November 25, 2018," the "November" string will change based on the user locale. When the user locale gets changed, it adds and Input locale with all the default settings for the associated language. Applications and websites should use these settings to present data to the user.
 
-
-
-There are two ways to detect a user locale:
+There are different ways to detect a user locale:
 
   * Geo IP
+  * Geolocation API
   * Accept-Language request header
 
-A lot of websites use Geo IP to guess the location users are visiting from. This approach can be quite expensive to implement and it is not always accurate either. In today's world people travel a lot, which means their location doesn't necessarily represent their desired locale. Therefore a second method is 
+A lot of websites use Geo IP to guess the location users are visiting from. This approach can be quite expensive to implement and it is not always accurate either. In today's world people travel a lot, which means their location doesn't necessarily represent their desired locale. 
 
+Geolocation API is an HTML5 ...
 
+....
 
+The Accept-Language request HTTP header provides information about the languages that the user is able to understand and about what locale the user prefers. Browsers set this information based on their user interface language. Users are able to change this but they rarely do.
 
+Using the Accept-Language header is a good starting point for determining the language of the user. Originally the Accept-Language header was intended to specify a user's language. But because a lot of applications also need to know the locale of a user, Accept-Language has been used to determine this information. 
 
-Using the Accept-Language header is also a good starting point for determining the language of the user, rather than the locale, but even then you must know its limitations and give the user some way to override the assumptions you make. Many of the potential issues listed above apply here too.
+If you use Accept-Language to determine this information, you should give the user an option to override the language and cultural settings if they would like to do so. The information in Accept-Language header might might be out of the user's control if they are travelling and are using an internet cafe or they are borrowing a friend's computer for example.
 
+In React you can easily use the accept-language package. This package extracts user locales from HTTP headers and compares them to the ones you offer on your website. If none of the locales match, then the default locale of your website will be used.
+
+To use the package, install it with npm or yarn:
+
+```
+npm install --save accept-language  npm install --save cookie-parser js-cookie
+```
+
+Next import the libraries in the server.js file and set it up as follows:
+
+```
+import cookieParser from 'cookie-parser';
+import acceptLanguage from 'accept-language';
+
+acceptLanguage.languages(['en', 'de']);
+
+const app = express();
+
+app.use(cookieParser());
+
+function detectLocale(req) {
+  const cookieLocale = req.cookies.locale;
+
+  return acceptLanguage.get(cookieLocale || req.headers['accept-language']) || 'en';
+}
+…
+
+app.use((req, res) => {
+  const locale = detectLocale(req);
+  const componentHTML = ReactDom.renderToString(<App />);
+
+  res.cookie('locale', locale, { maxAge: (new Date() * 0.001) + (365 * 24 * 3600) });
+  return res.end(renderHTML(componentHTML));
+});
+```
 
 
 
@@ -50,13 +88,6 @@ What is the user's physical location?
 
 Since none of these are included in the HTTP protocol many web developers have used the Accept-Language header to make inferences about the user's locale.
 
-The Accept-Language header is information about the user's language preferences that is passed via HTTP when a document is requested. Mainstream browsers allow these language preferences to be modified by the user. The value itself is a defined by BCP 47, typically as a two or three letter language code (eg. fr for French), followed by optional subcodes representing such things as country (eg. fr-CA represents French as spoken in Canada).
-
-The question is about whether this information is appropriate for determining the locale of the user.
-
-The HTTP Accept-Language header was originally only intended to specify the user's language. However, since many applications need to know the locale of the user, common practice has used Accept-Language to determine this information. It is not a good idea to use the HTTP Accept-Language header alone to determine the locale of the user. If you use Accept-Language exclusively, you may handcuff the user into a set of choices not to his liking.
-
-For a first contact, using the Accept-Language value to infer regional settings may be a good starting point, but be sure to allow them to change the language as needed and specify their cultural settings more exactly if necessary. Store the results in a database or a cookie for later visits.
 
 Some of the potential issues include the following:
 
