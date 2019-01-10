@@ -20,11 +20,11 @@ There are different ways to detect a user locale:
 
   * Geo IP
   * Accept-Language request header
+  * Window.navigator object
 
-A lot of websites use Geo IP to guess the location users are visiting from. This approach can be quite expensive to implement and it is not always accurate either. In today's world people travel a lot, which means their location doesn't necessarily represent their desired locale. 
+Geo IP refers to the method of locating a computer's geographic location by identifying its IP address. A lot of websites use Geo IP to guess the location users are visiting from. [IP Location Finder] (https://www.iplocation.net/ "IP Location Finder") is an easy demo for information that can be found. 
 
-
-
+This approach can be quite expensive to implement and it is not always accurate either. In today's world people travel a lot, which means their location doesn't necessarily represent their desired locale. 
 
 The Accept-Language request HTTP header provides information about the languages that the user is able to understand and about what locale the user prefers. Browsers set this information based on their user interface language. Users are able to change this but they rarely do.
 
@@ -69,27 +69,20 @@ app.use((req, res) => {
 ```
 In the example both English and German are accepted locales. The detectLocale function looks first for a locale from a cookie and if there is none, it will fetch the information from the Accept-Language header. 
 
+If you just need the user's preferred language, the [window.navigator object] (https://developer.mozilla.org/it/docs/Web/API/NavigatorLanguage/language "window.navigator object") contains a read-only property navigator.language that returns a string representing the preferred language of the user, which tends to be the language of the browser user interface.
+
+```javascript
+var lang = window.navigator.language
+```
 
 
+## Conclusion
 
+User locales are useful to answer questions such as:
 
+  * What numeric formats does the user expect?
+  * How should dates and times be formatted?
+  * What is the user's preferred language?
+  * What is the user's time zone?
 
-What numeric formats does the user expect?
-How should dates and times be formatted?
-In other cases, other information may be derived from the locale information plus additional knowledge, such as:
-
-Should measurements be metric (centimeters, kilometers, liters) or imperial (inches, miles, gallons)?
-What is the user's time zone?
-Does the user use Letter size paper, or A4?
-What shoe and clothing sizing systems should be used?
-What is the user's physical location?
-
-Since none of these are included in the HTTP protocol many web developers have used the Accept-Language header to make inferences about the user's locale.
-
-
-Some of the potential issues include the following:
-
-Many users never change the defaults for Accept-Language. They are set when the user agent is installed. Unless they are multilingual or have some other reason to adjust language preferences they may not even know such settings exist. Hence, the user may not have ever ratified the Accept-Language setting.
-A user agent may send a request that specifies only a language and not a region, for example you may not get a header with de-DE, de-CH or de-AT to indicate German as spoken in Germany, Switzerland or Austria, respectively. On the other hand, you might only get de indicating a preference for German. If you were planning to use the region to decide what currency to use you are now in a bind. Your particular circumstances might allow you to make assumptions such as "Germany has 83 million people, Switzerland has 7 million but only 63% speak German, Austria has 8 million, so this user probably uses the Euro. If we're wrong we'll only offend 4.6% of our German speaking customers or just over 4 million people." Feel free to make such an assumption, if you can accept the risk. Its a lot simpler to ask the user for more information. Also, the math gets more difficult for Spanish or English, for instance.
-People borrow machines from friends, they rent them from internet cafes. In these cases the inferred locale may be inappropriate, and care should be taken to allow the user to select the appropriate language and locale from whatever page they are looking at.
-
+There are different ways to determine this information, however, none of them are 100% perfect. Whatever way you decide to implement your user locale detection, give the user an option to change it because people borrow from friends or use internet cafes and should be allowed to pick their own preferences.
