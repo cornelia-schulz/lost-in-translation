@@ -1,5 +1,5 @@
 ---
-path: "/2019-01-10-detecting-user-locales-in-react"
+path: "/2019-01-11-detecting-user-locales-in-react"
 title: "Detecting user locales in React"
 date: "2019-01-10"
 tags: ["localisation", "localization", "internationalisation", "internationalization", "translation", "globalisation", "globalization", "react", "user locales"]
@@ -19,37 +19,10 @@ A user locale indicates which default settings a user wants to use to format dat
 There are different ways to detect a user locale:
 
   * Geo IP
-  * Geolocation API
   * Accept-Language request header
 
 A lot of websites use Geo IP to guess the location users are visiting from. This approach can be quite expensive to implement and it is not always accurate either. In today's world people travel a lot, which means their location doesn't necessarily represent their desired locale. 
 
-
-
-Geolocation API is an HTML5 feature that allows a website visitor to share their location with you. The user will see a prompt on the screen asking them if they would like to share their location with your website. If the user chooses not to disclose their location, you won't be able to retrieve the information that way.
-
-```
-if ("geolocation" in navigator) {
-  // check if geolocation is supported/enabled on current browser
-  navigator.geolocation.getCurrentPosition(
-   function success(position) {
-     // for when getting location is a success
-     console.log('latitude', position.coords.latitude, 
-                 'longitude', position.coords.longitude);
-   },
-  function error(error_message) {
-    // for when getting location results in an error
-    console.error('An error has occured while retrieving
-                  location', error_message)
-  }  
-});
-} else {
-  // geolocation is not supported
-  // get your location some other way
-  console.log('geolocation is not enabled on this browser')
-}
-```
-In the example we are first of all checking whether geolocation is enabled or supported by the browser. If it is, you will either receive the data or you will receive an error.
 
 
 

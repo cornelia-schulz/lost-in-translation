@@ -5,7 +5,7 @@ date: "2018-12-29"
 tags: ["localisation", "localization", "internationalisation", "internationalization", "translation", "globalisation", "globalization", "accessibility", "WAI", "web accessibility", "accessibility guidelines"]
 published: true
 previous: "/2018-11-03-react-hooks"
-next: "/2019-01-10-detecting-user-locales-in-react"
+next: "/2019-01-11-detecting-user-locales-in-react"
 blurb: "Web accessibility means that websites, tools and technologies are designed and developed so that anybody can use them. Read on if you would like to know more about web accessibility and localisation."
 image: "/static/wild-muriwai-b7b4909e2cbd1ad596a8318283e57ffe.jpg"
 imagetitle: "Evening over Muriwai"
