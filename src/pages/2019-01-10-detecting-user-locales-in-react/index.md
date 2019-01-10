@@ -24,9 +24,34 @@ There are different ways to detect a user locale:
 
 A lot of websites use Geo IP to guess the location users are visiting from. This approach can be quite expensive to implement and it is not always accurate either. In today's world people travel a lot, which means their location doesn't necessarily represent their desired locale. 
 
-Geolocation API is an HTML5 ...
 
-....
+
+Geolocation API is an HTML5 feature that allows a website visitor to share their location with you. The user will see a prompt on the screen asking them if they would like to share their location with your website. If the user chooses not to disclose their location, you won't be able to retrieve the information that way.
+
+```
+if ("geolocation" in navigator) {
+  // check if geolocation is supported/enabled on current browser
+  navigator.geolocation.getCurrentPosition(
+   function success(position) {
+     // for when getting location is a success
+     console.log('latitude', position.coords.latitude, 
+                 'longitude', position.coords.longitude);
+   },
+  function error(error_message) {
+    // for when getting location results in an error
+    console.error('An error has occured while retrieving
+                  location', error_message)
+  }  
+});
+} else {
+  // geolocation is not supported
+  // get your location some other way
+  console.log('geolocation is not enabled on this browser')
+}
+```
+In the example we are first of all checking whether geolocation is enabled or supported by the browser. If it is, you will either receive the data or you will receive an error.
+
+
 
 The Accept-Language request HTTP header provides information about the languages that the user is able to understand and about what locale the user prefers. Browsers set this information based on their user interface language. Users are able to change this but they rarely do.
 
@@ -69,7 +94,7 @@ app.use((req, res) => {
   return res.end(renderHTML(componentHTML));
 });
 ```
-
+In the example both English and German are accepted locales. The detectLocale function looks first for a locale from a cookie and if there is none, it will fetch the information from the Accept-Language header. 
 
 
 
@@ -94,3 +119,4 @@ Some of the potential issues include the following:
 Many users never change the defaults for Accept-Language. They are set when the user agent is installed. Unless they are multilingual or have some other reason to adjust language preferences they may not even know such settings exist. Hence, the user may not have ever ratified the Accept-Language setting.
 A user agent may send a request that specifies only a language and not a region, for example you may not get a header with de-DE, de-CH or de-AT to indicate German as spoken in Germany, Switzerland or Austria, respectively. On the other hand, you might only get de indicating a preference for German. If you were planning to use the region to decide what currency to use you are now in a bind. Your particular circumstances might allow you to make assumptions such as "Germany has 83 million people, Switzerland has 7 million but only 63% speak German, Austria has 8 million, so this user probably uses the Euro. If we're wrong we'll only offend 4.6% of our German speaking customers or just over 4 million people." Feel free to make such an assumption, if you can accept the risk. Its a lot simpler to ask the user for more information. Also, the math gets more difficult for Spanish or English, for instance.
 People borrow machines from friends, they rent them from internet cafes. In these cases the inferred locale may be inappropriate, and care should be taken to allow the user to select the appropriate language and locale from whatever page they are looking at.
+
