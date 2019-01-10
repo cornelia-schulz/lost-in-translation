@@ -1,6 +1,6 @@
 ---
 path: "/2019-01-11-detecting-user-locales-in-react"
-title: "Detecting user locales in React"
+title: "Detecting user locales in JavaScript and React"
 date: "2019-01-10"
 tags: ["localisation", "localization", "internationalisation", "internationalization", "translation", "globalisation", "globalization", "react", "user locales"]
 published: true
