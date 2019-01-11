@@ -1,5 +1,5 @@
 ---
-path: "/2019-01-11-detecting-user-locales-in-react"
+path: "/2019-01-11-detecting-user-locales-in-javascript-and-react"
 title: "Detecting user locales in JavaScript and React"
 date: "2019-01-10"
 tags: ["localisation", "localization", "internationalisation", "internationalization", "translation", "globalisation", "globalization", "react", "user locales"]
@@ -14,21 +14,20 @@ Detecting the location of your website’s users is useful for a variety of reas
 
 ## What is a user locale?
 
-A user locale indicates which default settings a user wants to use to format dates, times, currency, and large numbers. The user locale is not the language. The only influence the user locale has on the language is on the names of the days and months. For example, if you use the long date format to display "November 25, 2018," the "November" string will change based on the user locale. When the user locale gets changed, it adds and Input locale with all the default settings for the associated language. Applications and websites should use these settings to present data to the user.
+A user locale indicates which default settings a user wants to use to format dates, times, currency, and large numbers. The user locale is not the language. The only influence the user locale has on the language is on the names of the days and months. For example, if you use the long date format to display "November 25, 2018," the "November" string will change based on the user locale. When the user locale gets changed, it adds an input locale with all the default settings for the associated language. Applications and websites should use these settings to present data to the user.
 
 There are different ways to detect a user locale:
 
-  * Geo IP
-  * Accept-Language request header
-  * Window.navigator object
+* -- Geo IP
+* -- Accept-Language request header
 
-Geo IP refers to the method of locating a computer's geographic location by identifying its IP address. A lot of websites use Geo IP to guess the location users are visiting from. [IP Location Finder] (https://www.iplocation.net/ "IP Location Finder") is an easy demo for information that can be found. 
+Geo IP refers to the method of locating a computer's geographic location by identifying its IP address. A lot of websites use Geo IP to guess the location users are visiting from. [IP Location Finder] (https://www.iplocation.net/ "IP Location Finder") is an easy demo for information that can be gathered that way.
 
 This approach can be quite expensive to implement and it is not always accurate either. In today's world people travel a lot, which means their location doesn't necessarily represent their desired locale. 
 
 The Accept-Language request HTTP header provides information about the languages that the user is able to understand and about what locale the user prefers. Browsers set this information based on their user interface language. Users are able to change this but they rarely do.
 
-Using the Accept-Language header is a good starting point for determining the language of the user. Originally the Accept-Language header was intended to specify a user's language. But because a lot of applications also need to know the locale of a user, Accept-Language has been used to determine this information. 
+Using the Accept-Language header is a good starting point for determining the language of the user. Originally the Accept-Language header was intended to specify a user's language. But because a lot of applications also need to know the locale of a user, Accept-Language has been used to determine this information.
 
 If you use Accept-Language to determine this information, you should give the user an option to override the language and cultural settings if they would like to do so. The information in Accept-Language header might might be out of the user's control if they are travelling and are using an internet cafe or they are borrowing a friend's computer for example.
 
