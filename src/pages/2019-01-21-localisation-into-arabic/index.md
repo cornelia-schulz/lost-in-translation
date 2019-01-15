@@ -5,23 +5,20 @@ date: "2019-01-21"
 tags: ["localisation", "localization", "internationalisation", "internationalization", "translation", "globalisation", "globalization", "challenges", "Arabic"]
 published: true
 previous: "/2019-01-11-detecting-user-locales-in-javascript-and-react"
-blurb: ""
+blurb: "Arabic is the fifth most widely spoken language in the world. If you would like to be successful online presence for Arab users, you will need to apply UX and usability considerations that are specific to their region. Continue reading if you would like to find out more about challenges and considerations when localising into Arabic."
 image: "/static/"
 imagetitle: ""
 ---
 
+If you want to be successful online, you need to design for good user experience. That means if you are creating a website for Arab users, you need to apply UX and usability considerations that are specific to your target audience in that region.
 
-Online success requires that you design for good user experience. And when you’re designing specifically for Arabic websites and Arab users, you need to apply UX and usability considerations that are specific to users in the region.
+A great user experience will make users return to your website or app. If the experience is poor, they simply won't. 
 
-Why does having a good user experience matter?
-Because it matters to your users.
+Arabic is the fifth most widely spoken language throughout the world. It's mostly spoken in the Middle East and North Africa. It is one of the oldest languages and is the official language in 26 countries.
 
-The user experience is what shapes your organization’s perception in your customer’s mind. It’s what makes them come back to use your website or app the all-important second time.
-Users are fickle. If they have a bad experience, they won’t come back.
 
-Good UX is also what sets you apart from your competition. When users have an average experience with you, but a better one with the competition, they’ll go to your competition.
 
-Arabic is the world’s fifth language in terms of number of speakers. It is the first language to more than 250 million people and about 280 million people use Arabic as their second language. Arabic is mostly spoken in the Middle East and North Africa. It is the primary language in Algeria, Bahrain, Egypt, Iraq, Jordan, Kuwait, Lebanon, Libya, Mauritania, Morocco, Oman, Palestine, Qatar, Saudi Arabia, Sudan, Syria, Tunisia, United Arab Emirates and Yemen. It is also one of the official languages in the Chad, Comoros, Djibouti, Eritrea and Israel.
+
 
 there are certain characteristics and trends unique to Arabic websites and digital products that need to be taken into account. This is on top of behavior unique to users from the region within the demographic you’re targeting.
 
