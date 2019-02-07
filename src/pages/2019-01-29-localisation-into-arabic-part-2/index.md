@@ -1,54 +1,14 @@
 ---
-path: "/2019-01-25-localisation-into-arabic"
+path: "/2019-01-29-software-localisation-into-arabic-part-2"
 title: "Software localisation into Arabic"
-date: "2019-01-21"
+date: "2019-01-29"
 tags: ["localisation", "localization", "internationalisation", "internationalization", "translation", "globalisation", "globalization", "challenges", "Arabic"]
-published: true
-previous: "/2019-01-11-detecting-user-locales-in-javascript-and-react"
-blurb: ""
+published: false
+previous: "/2019-01-24-localisation-into-arabic-part-1"
+blurb: "Read on to find out about things to consider when you are localising a website into Arabic."
 image: "/static/"
 imagetitle: ""
 ---
-
-
-If you want to be successful online, you need to design for good user experience. That means if you are creating a website for Arab users, you need to apply UX and usability considerations that are specific to your target audience in that region.
-
-A great user experience will make users return to your website or app. If the experience is poor, they simply won't. 
-
-Arabic is the fifth most widely spoken language throughout the world. It's mostly spoken in the Middle East and North Africa. It is one of the oldest languages and is the official language in 26 countries. However, it is very under represented when it comes to the internet. 
-
-The written word is always going to be the backbone of any website or application. When users find it difficult to understand the content of your website or app, they will become frustrated and dissatisfied.
-
-Arabic tends to be a more 'wordy' language than English. Often certain English words or phrases cannot be translated into Arabic directly and they have to be described rather than translated word by word. This can lead to problems when there is only limited space available, e.g. on a mobile screen.
-
-It is also important to remember that there is no single form of Arab culture and language. There are three forms of Arabic: Classical or Qur’anic Arabic, Modern Standard Arabic and Spoken or Colloquial Arabic.
-
-Modern Standard Arabic
-It derives from classical Arabic. It is the language taught in schools and universities, used in news media, literature, science and technology and for administrative purposes across North Africa and the Middle East. There is therefore only one written form of Arabic and it is shared universally.
-Modern Standard Arabic is one of the six official languages of the United Nations. Educated Arabs from different countries communicate in Modern Standard Arabic. The term “Modern Standard Arabic” is mainly used in the Western World. Many Arabs do not differentiate between classical and modern standard Arabic.
-While Modern Standard Arabic is the only form of written Arabic, there are various forms of spoken Arabic.
-
-Colloquial or dialectal Arabic
-It refers to the different versions of Arabic spoken in the regions and countries of the Arab World. Some of these dialects are similar while others are mutually incomprehensible. People speaking different dialects can sometimes speak each in their own dialect and understand each other or will use Modern Standard Arabic to communicate. Colloquial Arabic can be considered as the mother tongue of most Arab speaking people, while Modern Standard Arabic is learned at school.
-
-Customers are often faced with the question: “Which Arabic should we translate into?” There is only one form of written Arabic. Translation is done into Modern Standard Arabic, which can be understood by all educated Arabs. There are nevertheless slight differences among regions regarding the type of calendar used, numbering formats, weekends, naming conventions, etc.
-
-This variation in culture extends to the dialect of Arabic people speak.
-
-Words that have a specific meaning in one Arabic dialect could have a completely different meaning in another one. They could even be words that sound completely foreign to Arabic speakers from another country. Often, certain words or phrases require a contextual understanding of that particular culture in order to know their meaning.
-
-So if your website or application has to be used by, and appeal to, Arabic speaking users from across the region, how do you accommodate variations in dialect?
-
-The simplest solution is to use what is sometimes referred to as “Modern Standard Arabic” (MSA) or Classical Arabic (fusha in Arabic). MSA is the standard that is most commonly taught in schools, with the majority of Arabic speakers able to read and write in it.
-
-However, it’s important to make the distinction that MSA is NOT a neutral form of Arabic. Arab users do not speak MSA in their daily lives.
-If you do end up using MSA, while the majority of users will be able to understand your content, the formal nature may not match your brand or the tone of voice you’re going for.
-
-Deciding on the format of Arabic you should use will be influenced by a number of different factors. Are your target users based in a single country or are you targeting the whole region? Do you have the resources and capabilities to have your website cater to the local dialect? What’s the tone of voice that you want your website or application to convey?
-
-Again, it’s important to fully understand who your target users are and then base your decisions accordingly.
-
-We know that Arab users prefer sites and applications that are in Arabic.
 
 But when it comes to search functionality, incorporating both Arabic and English is often a usability necessity.
 
