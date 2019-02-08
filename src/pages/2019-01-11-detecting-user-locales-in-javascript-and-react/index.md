@@ -1,16 +1,17 @@
 ---
 path: "/2019-01-11-detecting-user-locales-in-javascript-and-react"
 title: "Detecting user locales in JavaScript and React"
-date: "2019-01-10"
+date: "2019-01-11"
 tags: ["localisation", "localization", "internationalisation", "internationalization", "translation", "globalisation", "globalization", "react", "user locales"]
 published: true
 previous: "/2018-12-29-localisation-and-web-accessibility"
+next: "/2019-02-08-localisation-into-arabic-part-1"
 blurb: "If you want to display different content, perhaps in different languages for people from different countries, or display targeted information to visitors from different locations you need to detect the user locale. Read on to find out how."
 image: "/static/jacks-lighthouse-0e26eaacdc28a37597e1804e123510ab.jpg"
 imagetitle: "Jack's Lighthouse"
 ---
 
-Detecting the location of your website’s users is useful for a variety of reasons. You might for instance want to display different content, perhaps in different languages for people from different countries, or display targeted information to visitors from different locations. 
+Detecting the location of your website’s users is useful for a variety of reasons. You might for instance want to display different content, perhaps in different languages for people from different countries, or display targeted information to visitors from different locations.
 
 ## What is a user locale?
 
@@ -23,7 +24,7 @@ There are different ways to detect a user locale:
 
 Geo IP refers to the method of locating a computer's geographic location by identifying its IP address. A lot of websites use Geo IP to guess the location users are visiting from. [IP Location Finder] (https://www.iplocation.net/ "IP Location Finder") is an easy demo for information that can be gathered that way.
 
-This approach can be quite expensive to implement and it is not always accurate either. In today's world people travel a lot, which means their location doesn't necessarily represent their desired locale. 
+This approach can be quite expensive to implement and it is not always accurate either. In today's world people travel a lot, which means their location doesn't necessarily represent their desired locale.
 
 The Accept-Language request HTTP header provides information about the languages that the user is able to understand and about what locale the user prefers. Browsers set this information based on their user interface language. Users are able to change this but they rarely do.
 
@@ -35,13 +36,13 @@ In React you can easily use the accept-language package. This package extracts u
 
 To use the package, install it with npm or yarn:
 
-```
+```javascript
 npm install --save accept-language  npm install --save cookie-parser js-cookie
 ```
 
 Next import the libraries in the server.js file and set it up as follows:
 
-```
+```javascript
 import cookieParser from 'cookie-parser';
 import acceptLanguage from 'accept-language';
 
@@ -66,6 +67,7 @@ app.use((req, res) => {
   return res.end(renderHTML(componentHTML));
 });
 ```
+
 In the example both English and German are accepted locales. The detectLocale function looks first for a locale from a cookie and if there is none, it will fetch the information from the Accept-Language header. 
 
 If you just need the user's preferred language, the [window.navigator object] (https://developer.mozilla.org/it/docs/Web/API/NavigatorLanguage/language "window.navigator object") contains a read-only property navigator.language that returns a string representing the preferred language of the user, which tends to be the language of the browser user interface.
@@ -74,14 +76,13 @@ If you just need the user's preferred language, the [window.navigator object] (h
 var lang = window.navigator.language
 ```
 
-
 ## Conclusion
 
 User locales are useful to answer questions such as:
 
-  * What numeric formats does the user expect?
-  * How should dates and times be formatted?
-  * What is the user's preferred language?
-  * What is the user's time zone?
+* What numeric formats does the user expect?
+* How should dates and times be formatted?
+* What is the user's preferred language?
+* What is the user's time zone?
 
 There are different ways to determine this information, however, none of them are 100% perfect. Whatever way you decide to implement your user locale detection, give the user an option to change it because people borrow from friends or use internet cafes and should be allowed to pick their own preferences.
