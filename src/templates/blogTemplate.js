@@ -25,6 +25,8 @@ import jestAbout from '../images/jest-about.jpg'
 import wildMuriwai from '../images/wild-muriwai.jpg'
 // eslint-disable-next-line
 import jacksLighthouse from '../images/jacks-lighthouse.jpg'
+// eslint-disable-next-line
+import aucklandFireworks from '../images/Auckland-fireworks.jpg'
 
 import {
     FacebookShareButton,

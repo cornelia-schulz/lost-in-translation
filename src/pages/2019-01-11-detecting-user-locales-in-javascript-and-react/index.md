@@ -5,7 +5,7 @@ date: "2019-01-11"
 tags: ["localisation", "localization", "internationalisation", "internationalization", "translation", "globalisation", "globalization", "react", "user locales"]
 published: true
 previous: "/2018-12-29-localisation-and-web-accessibility"
-next: "/2019-01-25-localisation-into-arabic"
+next: "/2019-02-08-localisation-into-arabic"
 blurb: "If you want to display different content, perhaps in different languages for people from different countries, or display targeted information to visitors from different locations you need to detect the user locale. Read on to find out how."
 image: "/static/jacks-lighthouse-0e26eaacdc28a37597e1804e123510ab.jpg"
 imagetitle: "Jack's Lighthouse"
