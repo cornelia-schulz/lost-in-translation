@@ -1,86 +1,14 @@
 ---
-path: "/2019-02-08-software-localisation-into-arabic"
+path: "/2019-01-29-software-localisation-into-arabic-part-2"
 title: "Software localisation into Arabic"
-date: "2019-01-21"
+date: "2019-01-29"
 tags: ["localisation", "localization", "internationalisation", "internationalization", "translation", "globalisation", "globalization", "challenges", "Arabic"]
-published: true
-previous: "/2019-01-11-detecting-user-locales-in-javascript-and-react"
-blurb: "Arabic is the fifth most widely spoken language in the world. If you would like to be successful online presence for Arab users, you will need to apply UX and usability considerations that are specific to their region. Continue reading if you would like to find out more about challenges and considerations when localising into Arabic."
-image: "/static/Auckland-fireworks-ac46590486422d608370c1dec2c22c69.jpg"
-imagetitle: "Auckland Fireworks"
+published: false
+previous: "/2019-01-24-localisation-into-arabic-part-1"
+blurb: "Read on to find out about things to consider when you are localising a website into Arabic."
+image: "/static/"
+imagetitle: ""
 ---
-
-If you want to be successful online, you need to design for good user experience. That means if you are creating a website for Arab users, you need to apply UX and usability considerations that are specific to your target audience in that region.
-
-A great user experience will make users return to your website or app. If the experience is poor, they simply won't. 
-
-Arabic is the fifth most widely spoken language throughout the world. It's mostly spoken in the Middle East and North Africa. It is one of the oldest languages and is the official language in 26 countries.
-
-
-
-
-
-there are certain characteristics and trends unique to Arabic websites and digital products that need to be taken into account. This is on top of behavior unique to users from the region within the demographic you’re targeting.
-
-If we accept that users spend most of their time using other products, by the time they arrive at your site or use your app, they’ll expect it to work in the same way as other ones they’ve used.
-
-The most established examples include things like users expecting global navigation to be located at the top of the page, links to be in blue and underlined, and a site’s logo to link back to the home page.
-
-If we accept that users spend most of their time using other products (Jakob’s Law, NNg), by the time they arrive at your site or use your app, they’ll expect it to work in the same way as other ones they’ve used.
-
-The most established examples include things like users expecting global navigation to be located at the top of the page, links to be in blue and underlined, and a site’s logo to link back to the home page.
-
-While academic theories about culture and established standards of web design and usability are a good starting point for designing for Arab users, the only way to really create usable products that deliver a great user experience is through user research with real users on the ground.
-
-The Importance of Language in UI Design
-The written word is always going to be the backbone of communication on any interface.
-
-Language has a direct impact on the user’s perceived usability of an interface. When users have difficulty understanding the content on your website or application, it leads to user frustration and dissatisfaction.
-
-Whether it’s your headlines above the fold, labels in your menu, product descriptions or your button copy, the language you use plays a big role in your user’s experience.
-
-Direct Translation Can Result in Usability Fails
-Arabic tends to be a more ‘wordy’ language than English. Information that can be communicated in just a few words in English, can take a sentence or two in Arabic.
-
-It’s often the case that certain words or phrases in English don’t have direct Arabic translations. Instead, they end up being described with longer phrases. This becomes a particular problem when there’s limited screen real estate available, for example, button copy or copy for a mobile design.
-
-So don’t just rely on direct translation from your English content. When creating your Arabic copy, you’ll need to make an effort to think about what exactly it is you want to communicate and how best to do it as concisely as possible.
-
-Even with the best translators, you need to have a good understanding of different local cultures and societal practices. By not doing so, you risk putting out content that is confusing at best or is considered offensive at worst.
-
-That said, it’s important to remember that there is no single Arab culture. What may be common practice in one Arab country may be completely foreign in another.
-
-There are three forms of Arabic: Classical or Qur’anic Arabic, Modern Standard Arabic and Spoken or Colloquial Arabic.
-
-Qur'anic or classical Arabic
-It belongs to the Semitic group of languages. It is one of the last surviving Semitic languages along with Hebrew, Amharic, and a dialect of Aramaic. Classical Arabic is the language of the Qur’an. It is primarily learned for reading and reciting Islamic religious texts. It is the language of Early Islamic Literature.
-
-Modern Standard Arabic
-It derives from classical Arabic. It is the language taught in schools and universities, used in news media, literature, science and technology and for administrative purposes across North Africa and the Middle East. There is therefore only one written form of Arabic and it is shared universally.
-Modern Standard Arabic is one of the six official languages of the United Nations. Educated Arabs from different countries communicate in Modern Standard Arabic. The term “Modern Standard Arabic” is mainly used in the Western World. Many Arabs do not differentiate between classical and modern standard Arabic.
-While Modern Standard Arabic is the only form of written Arabic, there are various forms of spoken Arabic.
-
-Colloquial or dialectal Arabic
-It refers to the different versions of Arabic spoken in the regions and countries of the Arab World. Some of these dialects are similar while others are mutually incomprehensible. People speaking different dialects can sometimes speak each in their own dialect and understand each other or will use Modern Standard Arabic to communicate. Colloquial Arabic can be considered as the mother tongue of most Arab speaking people, while Modern Standard Arabic is learned at school.
-
-Customers are often faced with the question: “Which Arabic should we translate into?” There is only one form of written Arabic. Translation is done into Modern Standard Arabic, which can be understood by all educated Arabs. There are nevertheless slight differences among regions regarding the type of calendar used, numbering formats, weekends, naming conventions, etc.
-
-This variation in culture extends to the dialect of Arabic people speak.
-
-Words that have a specific meaning in one Arabic dialect could have a completely different meaning in another one. They could even be words that sound completely foreign to Arabic speakers from another country. Often, certain words or phrases require a contextual understanding of that particular culture in order to know their meaning.
-
-So if your website or application has to be used by, and appeal to, Arabic speaking users from across the region, how do you accommodate variations in dialect?
-
-The simplest solution is to use what is sometimes referred to as “Modern Standard Arabic” (MSA) or Classical Arabic (fusha in Arabic). MSA is the standard that is most commonly taught in schools, with the majority of Arabic speakers able to read and write in it.
-
-However, it’s important to make the distinction that MSA is NOT a neutral form of Arabic. Arab users do not speak MSA in their daily lives.
-If you do end up using MSA, while the majority of users will be able to understand your content, the formal nature may not match your brand or the tone of voice you’re going for.
-
-Deciding on the format of Arabic you should use will be influenced by a number of different factors. Are your target users based in a single country or are you targeting the whole region? Do you have the resources and capabilities to have your website cater to the local dialect? What’s the tone of voice that you want your website or application to convey?
-
-Again, it’s important to fully understand who your target users are and then base your decisions accordingly.
-
-We know that Arab users prefer sites and applications that are in Arabic.
 
 But when it comes to search functionality, incorporating both Arabic and English is often a usability necessity.
 
@@ -182,3 +110,5 @@ Conclusion
 As the Western world realizes the size and value of the Arabic Market, the demand for localizing in Arabic is increasing. However there are many challenges in localizing in Arabic.
 The characteristics of the Arabic language can raise issues in translation and desktop publishing.
 Arabic lacks equivalents for many technology and business terms. Terminology management is therefore a major aspect of localization in Arabic. It is necessary to choose the right localization partner who can provide you with experienced translators and manage your terminology.
+
+While academic theories about culture and established standards of web design and usability are a good starting point for designing for Arab users, the only way to really create usable products that deliver a great user experience is through user research with real users on the ground.

@@ -27,6 +27,8 @@ import wildMuriwai from '../images/wild-muriwai.jpg'
 import jacksLighthouse from '../images/jacks-lighthouse.jpg'
 // eslint-disable-next-line
 import aucklandFireworks from '../images/Auckland-fireworks.jpg'
+// eslint-disable-next-line
+import arabic from '../images/arabic.jpg'
 
 import {
     FacebookShareButton,
@@ -59,7 +61,7 @@ export default function Template({
         <Layout>
             <div className='blog-post-container'>
                 <div className='blog-img' style={{ marginTop: '10px' }}>
-                    <img className='blog-img' src={frontmatter.image} alt={frontmatter.imagetitle} />
+                    <img className='blog-img' src={frontmatter.image} alt={frontmatter.imagetitle}/>
                 </div>
                 <div className='socialMedia right'>
                     <FacebookShareButton
