@@ -11,7 +11,7 @@ image: "/static/muriwai-milkyway-756273e8a8e77bef45b1dd944e8f0ce6.jpg"
 imagetitle: "Milkyway over Muriwai"
 ---
 
-The React team recently introduced a new feature in version 16.7.0-alpha - React Hooks. A lot of chatter in various React forums made me want to have a look what React Hooks are all about, so I went ahead and tried a few of them out. I should mention that they are currently still an experimental proposal and their implementation may change. It's worth keeping an eye on the [official documentation](https://reactjs.org/docs/hooks-intro.html "Official React documentation") for the latest update on this new feature. 
+The React team recently introduced a new feature in version 16.7.0-alpha - React Hooks. A lot of chatter in various React forums made me want to have a look what React Hooks are all about, so I went ahead and tried a few of them out. I should mention that they are currently still an experimental proposal and their implementation may change. It's worth keeping an eye on the [official documentation](https://reactjs.org/docs/hooks-intro.html "Official React documentation") for the latest update on this new feature.
 
 React Hooks were introduced to let you use state in stateless or functional components. Using Hooks you no longer will have to change your component into a class if you need state.
 
@@ -32,7 +32,7 @@ You can also create custom Hooks.
 
 To start using React Hooks, first use npm or yarn and install version 16.7.0-alpha.
 
-```
+```javascript
 yarn add react@16.7.0-alpha.0
 yarn add react-dom@16.7.0-alpha.0
 ```
@@ -42,7 +42,8 @@ I created a small [practice repository](https://github.com/cornelia-schulz/bookc
 ## State hooks
 
 Without a state Hook you'd have to create a class to keep track of count and its state in the component below:
-```
+
+```javascript
 import React from 'react'
 
 class Counter extends React.Component {
@@ -62,8 +63,10 @@ class Counter extends React.Component {
 }
 export default Counter
 ```
+
 State Hooks simply let you use state inside a functional component.
-```
+
+```javascript
 import { useState } from 'react'
 
 function Counter() {
@@ -78,11 +81,14 @@ function Counter() {
 }
 export default Counter
 ```
+
 Above, useState is the Hook. React will preserve the local state of the variable count in between re-renders. UseState has only one argument (0) - because the counter starts from 0. 0 is only used on the initial render.
 
 ## Effect hooks
+
 Effect Hooks are used to tell React that your component needs to do something after render. They run after every single render by default. If that's not quite what you want, this behaviour can be customised to suit.
-```
+
+```javascript
 import {useState, useEffect} from 'react'
 import {getAllBooks} from '../apiClient'
 
@@ -109,13 +115,16 @@ function Books() {
 }
 export default Books
 ```
+
 In the example above useEffect is used to pass a function to fetch some book titles from a simple database. In a class based component the same function would have been called from within componentDidMount.
 
 ## Custom hooks
+
 You can also write some custom Hooks to use within your React components. The React team suggests prefixing Hooks with "use", just to make it easier to keep track of the types of components in your code.
 
 usePrevious Hook:
-```
+
+```javascript
 import { useRef, useEffect } from 'react'
 
 export function usePrevious(value) {
@@ -126,10 +135,12 @@ export function usePrevious(value) {
     return ref.current
   }
 ```
-This custom Hook uses useRef to keep track of the previous state of the value that is getting passed into it. 
+
+This custom Hook uses useRef to keep track of the previous state of the value that is getting passed into it.
 
 The usePrevious Hook can then be used in other components such as the Counter component I mentioned above:
-```
+
+```javascript
 import { useState } from 'react'
 import { usePrevious } from './usePrevious'
 
@@ -147,7 +158,9 @@ function Counter() {
 }
 export default Counter
 ```
+
 ## A few points
+
 Hooks are still experimental and their implementation will probably change in the future, so it's probably best not to rewrite all your code to use them yet. They are compatible with all your current components, so maybe give them a try when you create your next component.
 
 Hooks should only be called at the top level of a React function component. Don’t call Hooks inside loops, conditions, or nested functions. This is to ensure that Hooks are getting called in the same order of every render and the state is correctly maintained.
@@ -157,6 +170,7 @@ Hooks are fully encapsulated — each time you call a Hook, it calls on isolated
 More React Hooks rules can be found in the [React documentation](https://reactjs.org/docs/hooks-rules.html "React Hooks Rules").
 
 ## Next steps
+
 Check out the [documentation](https://reactjs.org/docs/hooks-intro.html "Official React documentation") for Hooks proposal to learn more about React hooks. The [FAQ section](https://reactjs.org/docs/hooks-faq.html "FAQs about Hooks") will probably answer a lot of questions you may have as well.
 The React team also [collects feedback](https://github.com/reactjs/rfcs/pull/68 "Hook feature feedback").
 

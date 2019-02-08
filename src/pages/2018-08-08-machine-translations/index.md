@@ -44,7 +44,7 @@ _Example:_
 In both of these sentences, neural machine translation renders the English word “bank” as “Bank” in  German, i. e. the financial institution. It did not identify the alternative meaning, i.e. river bank. Also, the pronoun “it” in the second sentence is translated as “es” (neutral) when it should be “sie” (feminine because “Bank” in German is feminine).
 
 However, just by changing the first example a little bit, we can illustrate the strength of neural machine translation compared to statistical machine translation because it can accommodate the semantic qualities of words within a sentence:
-1st sentence: The water was cold and the current strong, when I went to the bank. My feet sunk into the mud. 
+1st sentence: The water was cold and the current strong, when I went to the bank. My feet sunk into the mud.
 NMT translation: Ich hatte kein Bargeld mehr, also ging ich zur Bank, aber sie hatte gerade geschlossen.
 
 This time the neural machine translation chose the correct pronoun.

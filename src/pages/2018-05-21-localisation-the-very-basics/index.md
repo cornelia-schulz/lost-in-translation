@@ -10,7 +10,6 @@ image: "/static/city-reflections-morning-f335aad8d4050856ca58b8193835bc85.jpg"
 imagetitle: "City reflections"
 ---
 
-
 I have worked in software localisation for a good few years now and often I find myself googling and collecting information and how to’s on various topics related to localisation and I thought, rather than keeping it all hidden in my little notebook, I will summarise things I research and collate them in this blog.
 
 __Localisation__ is often abbreviated to L10N, which simply takes the first and the last letter of the word itself, plus the count of letters of the word in between these letters.
