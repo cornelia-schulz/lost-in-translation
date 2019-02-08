@@ -38,8 +38,8 @@ const IndexPage = ({data: {site, allMarkdownRemark: {edges}}}) => {
       >
         <div className="featureContent">
           <h4 style={{ color: '#fff' }}>FEATURED ARTICLE</h4>
-          <Link to="/localisation-and-web-accessibility"><h2>Localisation and web accessibility</h2></Link>
-          <p>Published by Cornelia Schulz in December 2018</p>
+          <Link to="/localisation-into-arabic-part-1"><h2>Localisation into Arabic</h2></Link>
+          <p>Published by Cornelia Schulz in February 2019</p>
           <div className="socialMedia">
             <div>
               <a className="socialMediaLink rss" href="/rss.xml">

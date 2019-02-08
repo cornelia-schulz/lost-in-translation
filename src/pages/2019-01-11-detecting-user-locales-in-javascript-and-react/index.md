@@ -80,9 +80,9 @@ var lang = window.navigator.language
 
 User locales are useful to answer questions such as:
 
-* What numeric formats does the user expect?
-* How should dates and times be formatted?
-* What is the user's preferred language?
-* What is the user's time zone?
+* -- What numeric formats does the user expect?
+* -- How should dates and times be formatted?
+* -- What is the user's preferred language?
+* -- What is the user's time zone?
 
 There are different ways to determine this information, however, none of them are 100% perfect. Whatever way you decide to implement your user locale detection, give the user an option to change it because people borrow from friends or use internet cafes and should be allowed to pick their own preferences.
