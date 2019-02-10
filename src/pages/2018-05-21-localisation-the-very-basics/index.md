@@ -20,6 +20,6 @@ It is the provision of service for the linguistic and cultural adaption of produ
 
 As part of localistion, time, date and number formats need to be adapted, the correct currencies and payment methods need to be used. In some cases images and colours need to be adapted as well as some colours may have different connotations in different cultures.
 
-In comparison what is __internationalisation__?Internationalisation can also be abbreviated in a similar fashion: I16N. It is the process of generalising a product in such a way that it can be adapted in various languages and cultural conventions without having to redesign the product every single time you would like to publish it in another market.
+In comparison what is __internationalisation__? Internationalisation can also be abbreviated in a similar fashion: I16N. It is the process of generalising a product in such a way that it can be adapted in various languages and cultural conventions without having to redesign the product every single time you would like to publish it in another market.
 
 Another term worth mentioning is __globalisation__. Globalisation addresses business issues of taking a product to a global market. In terms of websites, globalisation refers to enabling that website to deal with non-English speaking visitors, i.e. internationalising the website’s back-end, designing a multilingual architecture (e.g. ensure that your databases can deal with special characters) and localising the website’s static or dynamic content.

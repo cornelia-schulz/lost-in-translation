@@ -13,7 +13,7 @@ imagetitle: "Muriwai"
 
 # Testing React and I18next with Jest
 
-In [my last blog post](https://www.cornelia-schulz.net/localisation-With-I18next "Localisation with I18next") I showed you how to use I18next within my React application. In this post I'd like to share how to test your components that contain strings generated with I18next. In my [Photo Locations project](https://github.com/cornelia-schulz/photolocations "Photo Locations") I use Jest and Enzyme to test my code.
+In [my last blog post](https://www.cornelia-schulz.net/2018-10-07-localisation-With-I18next "Localisation with I18next") I showed you how to use I18next within my React application. In this post I'd like to share how to test your components that contain strings generated with I18next. In my [Photo Locations project](https://github.com/cornelia-schulz/photolocations "Photo Locations") I use Jest and Enzyme to test my code.
 
 So first of all, if you haven't already, install Jest and Enzyme using either Yarn or npm. Follow the instructions in the [Jest tutorial for React.](https://jestjs.io/docs/en/tutorial-react "Jest tutorial for React").
 
