@@ -11,6 +11,8 @@ image: "/static/jacks-lighthouse-0e26eaacdc28a37597e1804e123510ab.jpg"
 imagetitle: "Jack's Lighthouse"
 ---
 
+# Detecting user locales in JavaScript and React
+
 Detecting the location of your website’s users is useful for a variety of reasons. You might for instance want to display different content, perhaps in different languages for people from different countries, or display targeted information to visitors from different locations.
 
 ## What is a user locale?
@@ -22,7 +24,7 @@ There are different ways to detect a user locale:
 * -- Geo IP
 * -- Accept-Language request header
 
-Geo IP refers to the method of locating a computer's geographic location by identifying its IP address. A lot of websites use Geo IP to guess the location users are visiting from. [IP Location Finder] (https://www.iplocation.net/ "IP Location Finder") is an easy demo for information that can be gathered that way.
+Geo IP refers to the method of locating a computer's geographic location by identifying its IP address. A lot of websites use Geo IP to guess the location users are visiting from. [IP Location Finder](https://www.iplocation.net/ "IP Location Finder") is an easy demo for information that can be gathered that way.
 
 This approach can be quite expensive to implement and it is not always accurate either. In today's world people travel a lot, which means their location doesn't necessarily represent their desired locale.
 
@@ -70,7 +72,7 @@ app.use((req, res) => {
 
 In the example both English and German are accepted locales. The detectLocale function looks first for a locale from a cookie and if there is none, it will fetch the information from the Accept-Language header. 
 
-If you just need the user's preferred language, the [window.navigator object] (https://developer.mozilla.org/it/docs/Web/API/NavigatorLanguage/language "window.navigator object") contains a read-only property navigator.language that returns a string representing the preferred language of the user, which tends to be the language of the browser user interface.
+If you just need the user's preferred language, the [window.navigator object](https://developer.mozilla.org/it/docs/Web/API/NavigatorLanguage/language "window.navigator object") contains a read-only property navigator.language that returns a string representing the preferred language of the user, which tends to be the language of the browser user interface.
 
 ```javascript
 var lang = window.navigator.language

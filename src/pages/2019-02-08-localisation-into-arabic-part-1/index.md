@@ -1,6 +1,6 @@
 ---
 path: "/2019-02-08-localisation-into-arabic-part-1"
-title: "Software localisation into Arabic"
+title: "Software localisation into Arabic Part 1"
 date: "2019-02-08"
 tags: ["localisation", "localization", "internationalisation", "internationalization", "translation", "globalisation", "globalization", "challenges", "Arabic"]
 published: true
@@ -9,6 +9,8 @@ blurb: "Arabic is the fifth most widely spoken language in the world. If you wou
 image: "/static/Auckland-fireworks-cb6d25c8e7c65fb706f6a4f5d5d6d39c.jpg"
 imagetitle: "Auckland Fireworks"
 ---
+
+# Software localisation into Arabic Part 1
 
 If you want to be successful online, you need to design for good user experience. That means if you are creating a website for Arab users, you need to apply UX and usability considerations that are specific to your target audience in that region.
 

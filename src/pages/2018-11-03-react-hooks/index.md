@@ -11,6 +11,8 @@ image: "/static/muriwai-milkyway-756273e8a8e77bef45b1dd944e8f0ce6.jpg"
 imagetitle: "Milkyway over Muriwai"
 ---
 
+# React Hooks
+
 The React team recently introduced a new feature in version 16.7.0-alpha - React Hooks. A lot of chatter in various React forums made me want to have a look what React Hooks are all about, so I went ahead and tried a few of them out. I should mention that they are currently still an experimental proposal and their implementation may change. It's worth keeping an eye on the [official documentation](https://reactjs.org/docs/hooks-intro.html "Official React documentation") for the latest update on this new feature.
 
 React Hooks were introduced to let you use state in stateless or functional components. Using Hooks you no longer will have to change your component into a class if you need state.

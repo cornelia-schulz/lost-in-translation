@@ -11,6 +11,8 @@ image: "/static/wild-muriwai-b7b4909e2cbd1ad596a8318283e57ffe.jpg"
 imagetitle: "Evening over Muriwai"
 ---
 
+# Localisation and web accessibility
+
 Web accessibility means that websites and tools are designed and developed so that anybody even if they have any disabilities can use them. More specifically, people can perceive, understand, navigate, interact with  and contribute to the web. Web accessibility is also beneficial for people without disabilities.
 
 For example, a key principle of web accessibility is designing web sites and software that are flexible
@@ -46,7 +48,7 @@ The WCAG guidelines aim for perceivability, understandability, operability and r
 + Content must be robust enough that it can be interpreted reliably by a wide variety tools, including assistive technologies.
 + As technologies and tools evolve, the content should remain accessible at all times.
 
-All these guidelines can be found with detailed descriptions on the [W3 website] (https://www.w3.org/WAI/WCAG21/quickref/#ensure-compat "W3 website").
+All these guidelines can be found with detailed descriptions on the [W3 website](https://www.w3.org/WAI/WCAG21/quickref/#ensure-compat "W3 website").
 
 # How does localisation fit into the criterias mentioned above?
 

@@ -11,7 +11,9 @@ image: "/static/city-reflections-evening-697c25e0fe90ca69e9ced0612e9cbf53.jpg"
 imagetitle: "Reflections"
 ---
 
-# Glossaries
+# Glossaries and translation memories
+
+## Glossaries
 
 A glossary is a list of standardised terms in the source language of a company.
 
@@ -38,7 +40,7 @@ __Terms that should not be translated:__ Some products, services, or proper name
 
 A glossary is a living document, and you have to keep building it over time. Whenever a new key term is identified, make sure you add it to the glossary.
 
-# Translation memories
+## Translation memories
 
 A translation memory or TM for short is a database that contains human translations. They are an integral part of the translation process as the speed up translation, maintain consistency and save cost.
 

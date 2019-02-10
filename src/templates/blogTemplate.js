@@ -29,6 +29,12 @@ import jacksLighthouse from '../images/jacks-lighthouse.jpg'
 import aucklandFireworks from '../images/Auckland-fireworks.jpg'
 // eslint-disable-next-line
 import arabic from '../images/arabic.jpg'
+// eslint-disable-next-line
+import sydneyHarbourBridge from '../images/sydney-harbour-bridge.jpg'
+// eslint-disable-next-line
+import BBCScreenshots from '../images/BBC-screenshots.jpg'
+// eslint-disable-next-line
+import ya from '../images/ya.png'
 
 import {
     FacebookShareButton,
@@ -110,7 +116,7 @@ export default function Template({
                     </EmailShareButton>
                 </div>
                 <div className='blog-post'>
-                    <h1>{frontmatter.title}</h1>
+                    {/* <h1>{frontmatter.title}</h1> */}
                     <h2>{frontmatter.date}</h2>
                     <div className='blog-post-content' dangerouslySetInnerHTML={{ __html: html }} />
                 </div>

@@ -11,6 +11,8 @@ image: "/static/cornwallis-73c1668aa3a8f0e660ffe6b945e6b775.jpg"
 imagetitle: "Cornwallis"
 ---
 
+# Machine translations
+
 Almost everyone probably has heard of services such as Google Translate. Machine translation is the technical term for any computerised translation service. On a very basic level machine translation works by a simple substitution of words in one language for words in another. It is not quite an alternative to human translation yet as the following lines will show.
 
 First serious attempts of automated or machine translation were made in the 1950s with rule based systems (RBTM), which combined a number of grammatical rules and dictionaries. The big wave of research occurred in the 1980s when an increased amount of content needing translation inspired statistical machine translation (SMT). This method is based on large volumes of analysed data for specific language combinations. Statistical machine translations were used by the German computer scientist Franz Joseph Och to develop Google translate in the early 2000s.

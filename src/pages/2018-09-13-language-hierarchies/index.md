@@ -11,6 +11,8 @@ image: "/static/national-park-evening-eb3afba4df01ce6bb752fb7297ecaf30.jpg"
 imagetitle: "Tongariro Evening"
 ---
 
+# Language Hierarchies
+
 When working with languages you will probably come across culture specific languages such as German spoken in Germany, German spoken in Austria or Swiss German. It makes sense to organise your translated files in such a way that your German speaking customers only ever see German. However, if you are missing translations for a specific software string, it is good practise to fall back to your default culture and not show your customers that a string is missing or not show them anything at all.
 
 We can use language hierarchies to organise these fall-backs. But what's the best way to organise yourself?

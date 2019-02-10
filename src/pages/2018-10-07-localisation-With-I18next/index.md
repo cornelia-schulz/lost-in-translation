@@ -11,6 +11,8 @@ image: "/static/lake-taupo-evening-e25da1c466502f4dbc0f0a5fbf1691a0.jpg"
 imagetitle: "View from Lake Taupo"
 ---
 
+# Localisation in React with I18next
+
 Recently I participated in the pretty awesome Dev Academy Web Developer bootcamp to learn React and fullstack development and I enjoyed that immensely. I asked myself what's a good way to localise content in React applications? After some googling I came across [i-18next](https://www.i18next.com/ "i18next documentation") and more specifically [react-i18next](https://github.com/i18next/react-i18next "react-i18next documentation").
 
 I18next is an internationalisation framework and provides a lot of functionalities, such as pluralisation "out of the box". I thought I'd give it a try to see how easily it integrates with an existing application which I have been using to practise my React skills. The application is called Photo Locations and the code can be found on [Github](https://github.com/cornelia-schulz/photolocations "Photo Locations on Github") .

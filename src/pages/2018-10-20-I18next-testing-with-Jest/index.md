@@ -11,6 +11,8 @@ image: "/static/muriwai-ccebceaf605ed9f3eab39aa4288248ed.jpg"
 imagetitle: "Muriwai"
 ---
 
+# Testing React and I18next with Jest
+
 In [my last blog post](https://www.cornelia-schulz.net/localisation-With-I18next "Localisation with I18next") I showed you how to use I18next within my React application. In this post I'd like to share how to test your components that contain strings generated with I18next. In my [Photo Locations project](https://github.com/cornelia-schulz/photolocations "Photo Locations") I use Jest and Enzyme to test my code.
 
 So first of all, if you haven't already, install Jest and Enzyme using either Yarn or npm. Follow the instructions in the [Jest tutorial for React.](https://jestjs.io/docs/en/tutorial-react "Jest tutorial for React").
@@ -122,7 +124,7 @@ into the console.
 
 ![Running jest about](/static/jest-about-4f2ad213c34a740ae7910fc847e27018.jpg)
 
-### Something to watch out for
+## Something to watch out for
 
 Because the mock react-i18next.js file contains the ES6 spread operator, which is not initially supported by Jest, I had to add:
 
