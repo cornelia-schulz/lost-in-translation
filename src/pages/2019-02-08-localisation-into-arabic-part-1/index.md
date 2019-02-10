@@ -7,7 +7,7 @@ published: true
 previous: "/2019-01-11-detecting-user-locales-in-javascript-and-react"
 next: "/2019-02-10-localisation-into-arabic-part-2"
 blurb: "Arabic is the fifth most widely spoken language in the world. If you would like to be a successful online presence for Arab users, you will need to apply UX and usability considerations that are specific to this region. Continue reading if you would like to find out more."
-image: "/static/Auckland-fireworks-cb6d25c8e7c65fb706f6a4f5d5d6d39c.jpg"
+image: "/static/Auckland-fireworks-82264159e1beb170fbe8b11c1ffb9158.jpg"
 imagetitle: "Auckland Fireworks"
 ---
 

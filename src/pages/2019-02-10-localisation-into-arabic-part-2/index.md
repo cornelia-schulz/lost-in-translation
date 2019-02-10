@@ -6,7 +6,7 @@ tags: ["localisation", "localization", "internationalisation", "internationaliza
 published: false
 previous: "/2019-02-08-localisation-into-arabic-part-1"
 blurb: "Read on if you'd like to find out some more about some of the technical challenges when localising into Arabic."
-image: "/static/sydney-harbour-bridge-7b8637c7373dca5edb4df2d1ffcd0d68.jpg"
+image: "/static/sydney-harbour-bridge-6b683688d8dc6082760bc94c108a8c3b.jpg"
 imagetitle: "Sydney Harbour Bridge"
 ---
 
@@ -24,7 +24,7 @@ Because Arabic is written right to left, applications will be read from the top 
 
 The BBC website is a very good example of the difference in layout between [English](https://www.bbc.com/ "BBC.com website in English") and [Arabic](https://www.bbc.com/arabic "BBC.com website in Arabic").
 
-![Screenshots of the BBC website in English and Arabic](/static/BBC-screenshots-999fcc17793c2d081e088aea41b48b9b.jpg)
+![Screenshots of the BBC website in English and Arabic](/static/BBC-screenshots-4416da6abcd378dac74918dceece3d6a.jpg)
 
 ## Images
 
