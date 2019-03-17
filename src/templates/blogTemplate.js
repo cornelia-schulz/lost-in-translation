@@ -33,6 +33,20 @@ import sydneyHarbourBridge from '../images/sydney-harbour-bridge.jpg';
 import BBCScreenshots from '../images/BBC-screenshots.jpg';
 // eslint-disable-next-line
 import ya from '../images/ya.png';
+// eslint-disable-next-line
+import anzacBridge from '../images/Anzac-Bridge.jpg';
+// eslint-disable-next-line
+import transposh1 from '../images/transposh1.jpg';
+// eslint-disable-next-line
+import transposh2 from '../images/transposh2.jpg';
+// eslint-disable-next-line
+import transposh3 from '../images/transposh3.jpg';
+// eslint-disable-next-line
+import transposh4 from '../images/transposh4.jpg';
+// eslint-disable-next-line
+import transposh5 from '../images/transposh5.jpg';
+// eslint-disable-next-line
+import transposh6 from '../images/transposh6.jpg';
 
 import {
     FacebookShareButton,

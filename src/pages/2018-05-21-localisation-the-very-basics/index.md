@@ -5,7 +5,7 @@ date: "2018-05-21"
 tags: ["localisation", "localization", "internationalisation", "internationalization", "translation", "globalisation", "globalization", "terms"]
 published: true
 next: "/2018-06-11-glossaries-and-translation-memories"
-blurb: "Have you ever wondered what the difference is between localisation and internationalisation is?"
+blurb: "Have you ever wondered what the difference is between localisation and internationalisation?"
 image: "/static/city-reflections-morning-f335aad8d4050856ca58b8193835bc85.jpg"
 imagetitle: "City reflections"
 ---

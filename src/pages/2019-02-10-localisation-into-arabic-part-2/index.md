@@ -5,6 +5,7 @@ date: "2019-02-10"
 tags: ["localisation", "localization", "internationalisation", "internationalization", "translation", "globalisation", "globalization", "challenges", "Arabic"]
 published: false
 previous: "/2019-02-08-localisation-into-arabic-part-1"
+next: "/2019-03-17-localisation-in-wordpress-part-1"
 blurb: "Read on if you'd like to find out some more about some of the technical challenges when localising into Arabic."
 image: "/static/sydney-harbour-bridge-6b683688d8dc6082760bc94c108a8c3b.jpg"
 imagetitle: "Sydney Harbour Bridge"
