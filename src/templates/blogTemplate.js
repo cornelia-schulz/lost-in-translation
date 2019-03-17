@@ -36,6 +36,14 @@ import ya from '../images/ya.png';
 // eslint-disable-next-line
 import anzacBridge from '../images/Anzac-Bridge.jpg';
 // eslint-disable-next-line
+import weglot from '../images/WeGlot.jpg';
+// eslint-disable-next-line
+import weglot1 from '../images/WeGlot1.jpg';
+// eslint-disable-next-line
+import polylang from '../images/Polylang.jpg';
+// eslint-disable-next-line
+import polylang1 from '../images/Polylang1.jpg';
+// eslint-disable-next-line
 import transposh1 from '../images/transposh1.jpg';
 // eslint-disable-next-line
 import transposh2 from '../images/transposh2.jpg';

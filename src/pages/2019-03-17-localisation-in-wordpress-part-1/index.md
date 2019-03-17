@@ -14,19 +14,7 @@ imagetitle: "Anzac Bridge in Sydney"
 
 Recently I have been looking into how to work with WordPress and I was curious if it is easy to localise your site once you have set up some content in it.
 
-For developers it's good to know that WordPress uses Gettext libraries and tools for internationalisation (i18n).
-
-This is how it works in short:
-
-* Developers wrap translatable strings in gettext functions
-* Source code files are parsed and translatable strings are extracted as POT (Portable Objects Template) files
-* POT files are then often fed to GlotPress, a collaboration tool for translators
-* Translators translate and create a PO file, which is the same as the original POT file but now also contains translations.
-* PO files are compiled into binary MO files, which give faster access to the strings at run-time
-
-More information about how to prepare plugins for internationalisation can be found in the [WordPress documentation](https://codex.WordPress.org/I18n_for_WordPress_Developers "WordPress documenation").
-
-## Localisation
+In this blog post I'm looking at how to localise the WordPress interface as well as content. If you are looking for information about how to prepare plugins for internationalisation, have a look at the [WordPress documentation](https://codex.WordPress.org/I18n_for_WordPress_Developers "WordPress documenation"). I will not be covering this in this post.
 
 Localisation happens after internationalisation and is important for everyone who is interested in localising their WordPress site. It's the process during which your theme and content get translated and adapted for a specific market and language.
 
@@ -41,7 +29,33 @@ If you haven't installed WordPress yet, simply head over to their site [WordPres
 
 If you already have WordPress installed and would like to change the language of the user interface, simply log into your dashboard, click on Settings > General, then scroll down to the bottom of your page to Site Language and select the language of your choice from the dropdown.
 
-However, this will only change the language used in the backend of your WordPress site. All the content you have written as well as your theme and any plugins you use will remain in the language you set them up in. To translate content, you require a plugin. There are a number of plugins out there. For my tests I used the free plugin [Transposh](http://transposh.org/ "Transposh").
+However, this will only change the language used in the backend of your WordPress site. All the content you have written as well as your theme and any plugins you use will remain in the language you set them up in. To translate content, you require a separate plugin.
+
+## Localisation Plugins
+
+### WeGlot
+
+There are a number of plugins out there. When I looked up plugins, I initially tried out [WeGlot](https://weglot.com/ "WeGlot"), which has a free version available to test the setup. It was very easy to set up and intuitive to use. Once you create an account with WeGlot, they will take you through the setup step by step.
+
+![WeGlot Settings](/static/WeGlot-617c87ced45818c97ecb24716440f5bb.jpg)
+
+One drawback for me was that translations are edited in your WeGlot account rather than directly in WordPress.
+
+![WeGlot Translations](/static/WeGlot1-6354df4218b1cc94d367684e6140a1eb.jpg)
+
+### Polylang
+
+A second plugin I tried was [Polylang](https://en-au.wordpress.org/plugins/polylang/ "Polylang"). The plugin was very easy to set up. Simply install it via the plugins section and activate it. Once installed, you can set up the langauges you would like to localise into.
+
+![Polylang Settings](/static/Polylang-5eaaae877e55100c07bf17ca6caaf24a.jpg)
+
+Here it's important to set up your base language (which in my case was English UK) first. This is especially important if you already have some content in your site. Once you have your base language, you can then add any number of additional languages. Once you set up your languages, you can then easily add the translation of your posts and pages via the editor.
+
+![Polylang Translations](/static/Polylang1-285c7afd3978d1326c3a21bce208e0ea.jpg)
+
+### Transposh
+
+The third plugin I tried was [Transposh](http://transposh.org/ "Transposh"). It took me a little bit longer to set up but once it's set up, it's incredibly easy to use.
 
 To install the plugin, log into your dashboard, click on Plugins > Add New and search for Transposh, then install and activate the plugin. Next click on Transposh and go to the settings to enable the full version of your plugin. To do that simply tick the box at the top of the Settings page and save your change.
 
