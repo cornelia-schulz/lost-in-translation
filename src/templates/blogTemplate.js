@@ -55,6 +55,8 @@ import transposh4 from '../images/transposh4.jpg';
 import transposh5 from '../images/transposh5.jpg';
 // eslint-disable-next-line
 import transposh6 from '../images/transposh6.jpg';
+// eslint-disable-next-line
+import mtcook from '../images/mt-cook.jpg';
 
 import {
     FacebookShareButton,

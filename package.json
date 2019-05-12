@@ -18,7 +18,7 @@
     "gatsby-plugin-manifest": "^2.0.3",
     "gatsby-plugin-netlify": "^2.0.9",
     "gatsby-plugin-offline": "^2.0.22",
-    "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.0.20",
     "gatsby-plugin-typography": "^1.7.19",
     "gatsby-remark-images": "^3.0.3",
