@@ -5,6 +5,7 @@ date: "2019-03-17"
 tags: ["localisation", "localization", "internationalisation", "internationalization", "translation", "globalisation", "globalization", "challenges", "WordPress", "transposh", "plugin"]
 published: false
 previous: "/2019-02-10-localisation-into-arabic-part-2"
+next: "/2019-05-12-localisation-in-vue"
 blurb: "Read on if you are looking for a quick way to translate your WordPress page into another language."
 image: "/static/Anzac-Bridge-a1c3997ee3b33d5285e9ef79842763d4.jpg"
 imagetitle: "Anzac Bridge in Sydney"
