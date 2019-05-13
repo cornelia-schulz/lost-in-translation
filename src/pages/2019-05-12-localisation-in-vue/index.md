@@ -12,78 +12,31 @@ imagetitle: "Mt Cook"
 
 ## Localisation in Vue with i18next
 
-Having worked a little with Vue recently, I came across i18next for localisation in Vue. I was curious if it was easy to set up, so I added to a little practice project I have been working on. The repository I used can be found [here](https://github.com/cornelia-schulz/frontend-mentor-huddle-alternating-sections "here") and the actual site is [here](https://hopeful-knuth-d5f28e.netlify.com/ "here").
+Having worked a little with Vue recently, I came across i18next for localisation in Vue. I18next is an internationalisation-framework written in and for JavaScript. You can find some more info in their [documentation pages](https://www.i18next.com/ "documentation pages"). 
 
-To get started, use "npm install i18next @panter/vue-i18next" or "yarn add i18next @panter/vue-i18next" to add i18next to your Vue project. Next set up i18next in index.js:
+I was curious if it was easy to set up, so I added to a little practice project I have been working on. The repository I used can be found [here](https://github.com/cornelia-schulz/frontend-mentor-huddle-alternating-sections "here") and the actual site is [here](https://hopeful-knuth-d5f28e.netlify.com/ "here").
 
-```javascript
-import Vue from 'vue'
-import i18next from 'i18next'
-import VueI18Next from '@panter/vue-i18next'
-import App from './App.vue'
-import en from './locales/en.json'
-import de from './locales/de.json'
+To get started, set up a new project with ```vue create app-name```. Then use ```npm install i18next @panter/vue-i18next``` or ```yarn add i18next @panter/vue-i18next``` to add i18next to your Vue project. Next set up i18next in index.js:
 
-const locales = {
-  en: en,
-  de: de
-}
+index.js
+`gist:cornelia-schulz/8027717cd0a5e26df6d3bc0c8ddd57f6#index.js`
 
-Vue.use(VueI18Next)
-
-i18next.init({
-  lng: 'en',
-  fallbackLng: 'en',
-  resources: {
-    en: { translation: locales.en },
-    de: { translation: locales.de }
-  }
-})
-
-const i18n = new VueI18Next(i18next)
-
-if (document.getElementById('app')) {
-  /* eslint-disable-next-line no-new */
-  new Vue({
-    el: '#app',
-    i18n: i18n,
-    render: h => h(App)
-  })
-}
-```
-
-Import i18next and @panter/vue-i18next, then initialise it and set your resources. In my example I set English as my source and fallback language and German as additional language. I decided to store my text in .json files in a "locales" folder. The folder contains one file per language. Both files contain the same keys with text in the corresponding language.
+Looking at the code in index.js above in detail, we are first importing i18next and @panter/vue-i18next, then we are using ```i18next.init``` to initialise it and set the resources. In my example I set English as my source and fallback language and German as additional language. I decided to store my text in .json files in a "locales" folder. The folder contains one file per language. Both files contain the same keys with text in the corresponding language.
 
 en.json:
 
-```javascript
-{
-    "message": "hello",
-    "tryitfree": "Try it free",
-    "readytobuild": "Ready to build your community?"
-}
-```
+`gist:cornelia-schulz/8027717cd0a5e26df6d3bc0c8ddd57f6#en.json`
 
 And de.json:
 
-```javascript
-{
-    "message": "hallo",
-    "tryitfree": "Probiere es kostenlos",
-    "readytobuild": "Bist du bereit, deine Community aufzubauen?"
-}
-```
+`gist:cornelia-schulz/8027717cd0a5e26df6d3bc0c8ddd57f6#de.json`
 
-Now that we set up i18next and initialised it, we can use it in our various components. To do that simply use ```$t```.
+Now that we set up i18next and initialised it, it is available globally in our project and we can use ```$t``` in our various components to import our keys with their translations from the locale.json files into our components. And the great thing is you don't need to import anything else in the components, just use it.
 
-```javascript
-<button class="try">
-    {{ $t("tryitfree") }}
-</button>
-```
+`gist:cornelia-schulz/8027717cd0a5e26df6d3bc0c8ddd57f6#Header.vue`
 
-Last but not least we should give the user an option to change the language using "i18next.changeLanguage". You can find more information about Panter i18next in [the docuentation](https://panter.github.io/vue-i18next/guide/started.html "the documentation").
+Last but not least we should give the user an option to change the language using ```i18next.changeLanguage```. You can find more information about Panter i18next in [the documentation](https://panter.github.io/vue-i18next/guide/started.html "the documentation").
 
 ## Conclusion
 
-The initial set up of the i18next plugin for Vue is very easy to implement. The documentation was straight forward and easy to follow. There are quite a few options that I haven't explored yet but certainly intent to in the near future. Have you used this plugin? What are your experiences?
+The initial set up of the i18next plugin for Vue is very easy to implement. The documentation was straight forward and easy to follow. There are quite a few options that I haven't explored yet but certainly intend to in the near future. Have you used this plugin? What are your experiences?
