@@ -29,7 +29,7 @@ In my application I use webpack and I found the following package extremely help
 yarn add -d @alienfast/i18next-loader
 ```
 
-Next I added the following lines to my webpack config to configure i18next-loader:
+Next I added the following lines to the modules section my webpack config to configure i18next-loader:
 
 ```javascript
 {
